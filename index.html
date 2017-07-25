@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0,maximum-scale=1.0">
-    <meta  content="vue学习" name="description">
-    <meta content="vue学习" name="keywords">
-    <title>vue学习</title>
+    <meta  content="h5游戏" name="description">
+    <meta content="h5游戏" name="keywords">
+    <link rel="shortcut icon" href="./app/img/newicon3.png">
+    <title>H5GAME</title>
     <style type="text/css">
       [v-cloak] {
           display: none !important;
@@ -15,52 +16,40 @@
   <body>
         <div v-cloak id="app">
 
-          <div v-cloak class="top">
-              <div class="top-bar"><router-link to="/" class="left"><img src="./app/img/home1.png" /></router-link><p>{{page}}</p><a class="right" v-on:click="topFun"><img src="./app/img/other1.png" /></a></div>
 
-              <div class="top-cont" v-show = "topshow">
-                  <ul>
-                    <li>
+          <!-- <my-top id="top" v-cloak class="top"></my-top> -->
+          <div class="top">
+              <div class="top-bar">
 
-                      <router-link to="msg">
-                        <p><img src="./app/img/icon1.png"></p>
-                        <p>消息</p>
+                  <router-link to="/" class="left">
+                  <img src="./app/img/home1.png" /></router-link>
+                  <p>{{page}}</p>
+                  <a class="right" v-on:click="topFun">
+                      <img src="./app/img/other1.png" />
+                  </a>
+              </div>
+              <div class="top-cont bg-box" v-show = "topshow">
+
+                  <div class="login-box">
+                  <p>
+                      <router-link to="/login">
+                          Login 
                       </router-link>
-
-                    </li>
-                    <li>
-
-                      <router-link to="/flight">
-                        <p><img src="./app/img/icon2.png"></p>
-                        <p>航班</p> 
+                  </p>
+                  <p>
+                      <router-link to="/login">
+                          Login 
                       </router-link>
-                      
-                    </li>
-                    <li>
-                      <p><img src="./app/img/icon3.png"></p>
-                      <p>旅行</p>
-                    </li>
-                    <li>
-                      <p><img src="./app/img/icon4.png"></p>
-                      <p>钱包</p>
-                    </li>
-                    <li>
-                      <p><img src="./app/img/icon5.png"></p>
-                      <p>喜欢</p>
-                    </li>
-                    <li>
-                      <p><img src="./app/img/icon6.png"></p>
-                      <p>酒店</p>
-                    </li>
-                  </ul>
+                  </p>       
+                  </div>      
               </div>
           </div>
 
-          <router-view class="views"></router-view>
+          <div class="box">
+              <router-view class="views"></router-view>
+          </div>
 
         </div>
-        
-
         
         
 

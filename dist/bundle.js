@@ -485,8 +485,6 @@ module.exports = function (Vue) {
 
 module.exports = function (Vue, VueRouter) {
 
-	__webpack_require__(17);
-
 	// 1. 定义（路由）组件。
 	var homeHtml = __webpack_require__(14),
 	    flightHtml = __webpack_require__(13),
@@ -500,29 +498,6 @@ module.exports = function (Vue, VueRouter) {
 	// 通过 Vue.extend() 创建的组件构造器，
 	// 或者，只是一个组件配置对象。
 	const routes = [{ path: '/', component: Home }, { path: '/flight', component: Index }, { path: '/msg', component: Detail }];
-
-	// 创建路由对象
-	const router = new VueRouter({
-		routes: routes // （缩写）相当于 routes: routes，es6的新语法
-	});
-
-	var app = new Vue({
-
-		el: "#app",
-		router: router,
-		data: {
-
-			page: "Vue Demo",
-			topshow: false
-
-		},
-		methods: {
-			topFun: function () {
-				app.topshow = !app.topshow;
-			}
-		}
-
-	});
 };
 
 /***/ }),
@@ -11742,16 +11717,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 
 __webpack_require__(6);
-
-// require('./component.js')(Vue)
-
-__webpack_require__(3)(__WEBPACK_IMPORTED_MODULE_0_vue___default.a, __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
-
+__webpack_require__(17);
+__webpack_require__(18)(__WEBPACK_IMPORTED_MODULE_0_vue___default.a);
 __webpack_require__(2)(__WEBPACK_IMPORTED_MODULE_0_vue___default.a);
+
+const routes = __webpack_require__(3)(__WEBPACK_IMPORTED_MODULE_0_vue___default.a, __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
+
+// 创建路由对象
+const router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
+	routes // （缩写）相当于 routes: routes，es6的新语法
+});
+
+var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
+
+	el: "#app",
+	router: router,
+	data: {
+
+		page: "H5 Game",
+		topshow: false
+
+	},
+	methods: {
+		topFun: function () {
+			app.topshow = !app.topshow;
+		}
+	}
+
+});
 
 /***/ }),
 /* 8 */
@@ -11894,7 +11890,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p,header,footer,html{margin:0;padding:0;font-weight:normal;}\ninput,button,select,textarea{outline:none; vertical-align:middle;font-weight: 300;color:#333;}\ninput::-moz-focus-inner{ border: 0;padding: 0;}\nli{list-style:none;font-weight:normal;}\nem,i{font-style:normal;}\na,li,p{text-decoration: none;color: #333;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tap-highlight-color:rgba(0,0,0,0);-ms-tap-highlight-color:rgba(0,0,0,0);-o-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0)}\nimg{border:none}\ntextarea{resize:none}\nheader,nav,section,article,footer,figure,figcaption{display:block;}\ninput[type=\"text\"],input[type=\"search\"],input[type=\"password\"]{ -ms-appearance: none; -o-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; list-style: none;border: none;}\nbody{background: #e6e6e6;color:#404040;text-align:center;min-width:320px; min-height: 100%;font-family: \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;}\nhtml {max-width: 768px; min-width: 320px; width: 100%; min-height: 100%; margin: 0 auto;}\ninput[type=\"button\"], input[type=\"submit\"], input[type=\"reset\"] {-webkit-appearance: none;}\n.clearfix:after{ visibility:hidden; display:block; font-size:0; content:\" \"; clear:both; height:0;}\n.clearfix{ zoom:1;}\n\n/*device-width*/\n@media only screen and (max-width: 359px) { html { font-size:85%; } }\n@media only screen and (min-width: 360px) and (max-width: 399px) { html { font-size: 100%; } }\n@media only screen and (min-width: 400px) and (max-width: 479px) { html { font-size: 112.5%; } }\n@media only screen and (min-width: 480px) and (max-width: 539px) { html { font-size: 125%; } }\n@media only screen and (min-width: 540px) and (max-width: 599px) { html { font-size: 150%; } }\n@media only screen and (min-width: 600px) and (max-width: 639px) { html { font-size: 165%; } }\n@media only screen and (min-width: 640px) and (max-width: 719px) { html { font-size: 177.5%; } }\n@media only screen and (min-width: 720px) and (max-width: 767px) { html { font-size: 200%; } }\n@media only screen and (min-width: 768px) { html { font-size: 200%; } }\n\n.box{\n\tpadding-top: 3.5rem;\n\theight: 50rem;\n\twidth: 98%;\n\tmargin: 0 auto;\n\t/*box-shadow: 0px 2px 3px #ccc;*/\n}\n.bg-box{\n\twidth: 100%;\n\theight: auto;\n\tbackground: -webkit-linear-gradient(left top, #0dbb92 , #7bc0e9); /* Safari 5.1 - 6.0 */\n  \tbackground: -o-linear-gradient(bottom right, #0dbb92, #7bc0e9); /* Opera 11.1 - 12.0 */\n    background: -moz-linear-gradient(bottom right, #0dbb92, #7bc0e9); /* Firefox 3.6 - 15 */\n    background: linear-gradient(to bottom right, #0dbb92 , #7bc0e9); /* 标准的语法 */\n}", ""]);
+exports.push([module.i, "body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p,header,footer,html{margin:0;padding:0;font-weight:normal;}\ninput,button,select,textarea{outline:none; vertical-align:middle;font-weight: 300;color:#333;}\ninput::-moz-focus-inner{ border: 0;padding: 0;}\nli{list-style:none;font-weight:normal;}\nem,i{font-style:normal;}\na,li,p{text-decoration: none;color: #333;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-tap-highlight-color:rgba(0,0,0,0);-ms-tap-highlight-color:rgba(0,0,0,0);-o-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0)}\nimg{border:none}\ntextarea{resize:none}\nheader,nav,section,article,footer,figure,figcaption{display:block;}\ninput[type=\"text\"],input[type=\"search\"],input[type=\"password\"]{ -ms-appearance: none; -o-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; list-style: none;border: none;}\nbody{background: #e6e6e6;color:#404040;text-align:center;min-width:320px; min-height: 100%;font-family: \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;}\nhtml {max-width: 768px; min-width: 320px; width: 100%; min-height: 100%; margin: 0 auto;}\ninput[type=\"button\"], input[type=\"submit\"], input[type=\"reset\"] {-webkit-appearance: none;}\n.clearfix:after{ visibility:hidden; display:block; font-size:0; content:\" \"; clear:both; height:0;}\n.clearfix{ zoom:1;}\n\n/*device-width*/\n@media only screen and (max-width: 359px) { html { font-size:85%; } }\n@media only screen and (min-width: 360px) and (max-width: 399px) { html { font-size: 100%; } }\n@media only screen and (min-width: 400px) and (max-width: 479px) { html { font-size: 112.5%; } }\n@media only screen and (min-width: 480px) and (max-width: 539px) { html { font-size: 125%; } }\n@media only screen and (min-width: 540px) and (max-width: 599px) { html { font-size: 150%; } }\n@media only screen and (min-width: 600px) and (max-width: 639px) { html { font-size: 165%; } }\n@media only screen and (min-width: 640px) and (max-width: 719px) { html { font-size: 177.5%; } }\n@media only screen and (min-width: 720px) and (max-width: 767px) { html { font-size: 200%; } }\n@media only screen and (min-width: 768px) { html { font-size: 200%; } }\n\n.box{\n\tpadding: 3.5rem 0;\n\theight: 50rem;\n\twidth: 98%;\n\tmargin: 0 auto;\n\t/*box-shadow: 0px 2px 3px #ccc;*/\n}\n.bg-box{\n\twidth: 100%;\n\theight: auto;\n\tbackground: -webkit-linear-gradient(left top, #edf6f8 , #88c5d6); /* Safari 5.1 - 6.0 */\n  \tbackground: -o-linear-gradient(bottom right, #edf6f8, #88c5d6); /* Opera 11.1 - 12.0 */\n    background: -moz-linear-gradient(bottom right, #edf6f8, #88c5d6); /* Firefox 3.6 - 15 */\n    background: linear-gradient(to bottom right, #edf6f8 , #88c5d6); /* 标准的语法 */\n}", ""]);
 
 // exports
 
@@ -11908,7 +11904,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".top{\n\twidth: 100%;\n\theight: auto;\n\tposition: fixed;\n\ttop:0;\n\tmax-width: 768px;\n\tline-height: 3rem;\n\tbackground-color: #fcfcfc;\n\tborder-bottom:1px solid #999;\n}\n.top .top-bar{\n\tbox-shadow: 1px 3px 5px #ccc;\n\theight: 3rem;\n\tbackground: rgba(255,255,255,0.8);\n}\n.top .top-bar a{\n\tdisplay: block;\n\twidth: 1.6rem;\n\theight: 1.6rem;\n\tmargin: 0.7rem 1rem;\n}\n.top .top-bar a img{\n\tdisplay: block;\n\twidth: 100%;\n}\n.top .top-bar a.left{\n\tfloat: left;\n}\n.top .top-bar a.right{\n\tfloat: right;\n}\n.top .top-bar p{\n\tposition: absolute;\n\twidth: 5rem;\n\theight: 100%;\n\tmargin: 0 auto;\n\tcolor: #3f3f3f;\n\tfont-size: .9rem;\n\tleft: 50%;\n\tmargin-left:-2.5rem; \n}\n.top .top-cont{\n\twidth: 100%;\n\theight:auto;\n\tbackground: rgba(255,255,255,0.9);\n\tcolor: #333;\n\tmargin-top: .5rem;\n\tbox-shadow: 1px 3px 5px #ccc;\n}\n.top .top-cont ul{\n\twidth: 100%;\n\tpadding:2rem 0; \n\theight: auto;\n\toverflow:hidden; \n}\n.top .top-cont ul li{\n\tfloat: left;\n\twidth: 25%;\n\theight: 4rem;\n\tmargin: 1rem 0;\n}\n.top .top-cont ul li p{\n\twidth: 100%;\n\tline-height: 2rem;\n\tfont-size: 0.9rem;\n\tfont-weight: normal;\n}\n.top .top-cont ul li p img{\n\tdisplay: block;\n\twidth: 2rem;\n\theight: auto;\n\tmargin: 0 auto;\n}\n", ""]);
+exports.push([module.i, ".top{\n\twidth: 100%;\n\theight: auto;\n\tposition: fixed;\n\ttop:0;\n\tmax-width: 768px;\n\tline-height: 3rem;\n\tbackground-color: #fcfcfc;\n}\n.top .top-bar{\n\tbox-shadow: 1px 3px 5px #ccc;\n\theight: 3rem;\n\tbackground: rgba(255,255,255,0.8);\n}\n.top .top-bar a{\n\tdisplay: block;\n\twidth: 1.6rem;\n\theight: 1.6rem;\n\tmargin: 0.7rem 1rem;\n}\n.top .top-bar a img{\n\tdisplay: block;\n\twidth: 100%;\n}\n.top .top-bar a.left{\n\tfloat: left;\n}\n.top .top-bar a.right{\n\tfloat: right;\n}\n.top .top-bar p{\n\tposition: absolute;\n\twidth: 5rem;\n\theight: 3rem;\n\tmargin: 0 auto;\n\tcolor: #a6b1b0;\n\tfont-size: .9rem;\n\tleft: 50%;\n\tmargin-left:-2.5rem; \n\ttext-shadow: 2px 2px 2px #ccc;\n}\n.top .top-cont{\n\twidth: 98%;\n\theight:auto;\n\t/* background: rgba(255,255,255,0.9); */\n\tcolor: #333;\n\tmargin: .5rem auto;\n\tbox-shadow: 1px 3px 5px #ccc;\n}\n.top .top-cont .login-box{\n\twidth: 98%;\n\theight: auto;\n\tpadding: 2rem 0;\n\toverflow: hidden;\n}\n.top .top-cont .login-box p{\n\twidth: 100%;\n\theight: 2rem;\n\tline-height: 2rem;\n\toverflow: hidden;\n}\n.top .top-cont .login-box a{\n\tline-height: 1.9rem;\n\tborder-bottom: 1px solid #ccc;\n\tcolor: #a6b1b0;\n\ttext-align: right;\n\twidth: 10rem;\n\tpadding-right: 1rem;\n\tdisplay: block;\n\tfont-weight: normal;\n\tfloat: right;\n\tfont-size: .9rem;\n}\n\n\n\n", ""]);
 
 // exports
 
@@ -11992,6 +11988,41 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = function (Vue) {
+
+	let data = {
+		page: "Vue Demo"
+	};
+
+	// 注册组件
+	Vue.component("my-top", {
+
+		template: "#topTpl",
+		data: function () {
+
+			return data;
+		}, methods: {
+			topFun: function () {
+				top.topshow = !top.topshow;
+			}
+		}
+	});
+
+	// 创建top组件实例
+	let top = new Vue({
+		el: '#top',
+		data: {
+
+			topshow: false
+
+		}
+	});
+};
 
 /***/ })
 /******/ ]);

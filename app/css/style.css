@@ -26,7 +26,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appeara
 @media only screen and (min-width: 768px) { html { font-size: 200%; } }
 
 .box{
-	padding-top: 3.5rem;
+	padding: 3.5rem 0;
 	height: 50rem;
 	width: 98%;
 	margin: 0 auto;
@@ -35,8 +35,8 @@ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appeara
 .bg-box{
 	width: 100%;
 	height: auto;
-	background: -webkit-linear-gradient(left top, #0dbb92 , #7bc0e9); /* Safari 5.1 - 6.0 */
-  	background: -o-linear-gradient(bottom right, #0dbb92, #7bc0e9); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(bottom right, #0dbb92, #7bc0e9); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to bottom right, #0dbb92 , #7bc0e9); /* 标准的语法 */
+	background: -webkit-linear-gradient(left top, #edf6f8 , #88c5d6); /* Safari 5.1 - 6.0 */
+  	background: -o-linear-gradient(bottom right, #edf6f8, #88c5d6); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right, #edf6f8, #88c5d6); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, #edf6f8 , #88c5d6); /* 标准的语法 */
 }

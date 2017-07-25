@@ -1,9 +1,5 @@
 module.exports = function(Vue,VueRouter){
 
-
-
-	require('./css/top.css')
-
 	// 1. 定义（路由）组件。
 	var homeHtml = require("./views/home.html"),
 		flightHtml = require("./views/flight.html"),
@@ -21,29 +17,6 @@ module.exports = function(Vue,VueRouter){
 	  { path: '/flight', component: Index },
 	  { path: '/msg', component: Detail }
 	]
-
-	// 创建路由对象
-	const router = new VueRouter({
-	    routes:routes // （缩写）相当于 routes: routes，es6的新语法
-	})
-
-	var app = new Vue({
-		
-	  el:"#app",
-      router: router,
-      data:{
-
-      	page:"Vue Demo",
-      	topshow:false
-
-      },
-      methods:{
-	  	topFun:function(){
-	  		app.topshow = !app.topshow;
-	  	}
-	  }
-
-    })
 
 }
 
