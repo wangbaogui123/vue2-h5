@@ -14,43 +14,17 @@
     </style>
   </head>
   <body>
-        <div v-cloak id="app" class="app">
 
-          <!-- <my-top id="top" v-cloak class="top"></my-top> -->
-          <div class="top">
-              <div class="top-bar">
+    <my-top id="top"></my-top>
+    
+    <div class="box">
 
-                  <router-link to="/" class="left">
-                  <img src="./app/img/home1.png" /></router-link>
-                  <p>{{page}}</p>
-                  <a class="right" v-on:click="topFun">
-                      <img src="./app/img/other1.png" />
-                  </a>
-              </div>
-              <div class="top-cont bg-box" v-show = "topshow">
-
-                  <div class="login-box">
-                  <p>
-                      <router-link to="/login">
-                          Login 
-                      </router-link>
-                  </p>
-                  <p>
-                      <router-link to="/login">
-                          Login 
-                      </router-link>
-                  </p>       
-                  </div>      
-              </div>
-          </div>
-
-          <div class="box">
-                <router-view class="views"></router-view>
-          </div>
-
-          <my-footer></my-footer>  
-        </div>
+        <div id="app"></div>
         
+    </div>
+
+    <my-footer id="footer"></my-footer> 
+
     <script type="text/javascript" src="./dist/bundle.js"></script>
 
   </body>

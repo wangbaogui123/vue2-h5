@@ -6,6 +6,7 @@
 	max-width: 768px;
 	line-height: 3rem;
 	background-color: #fcfcfc;
+	z-index:100;
 }
 .top .top-bar{
 	box-shadow: 1px 3px 5px #ccc;
