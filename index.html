@@ -14,8 +14,7 @@
     </style>
   </head>
   <body>
-        <div v-cloak id="app">
-
+        <div v-cloak id="app" class="app">
 
           <!-- <my-top id="top" v-cloak class="top"></my-top> -->
           <div class="top">
@@ -46,13 +45,12 @@
           </div>
 
           <div class="box">
-              <router-view class="views"></router-view>
+                <router-view class="views"></router-view>
           </div>
 
+          <my-footer></my-footer>  
         </div>
         
-        
-
     <script type="text/javascript" src="./dist/bundle.js"></script>
 
   </body>
