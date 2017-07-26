@@ -29,13 +29,21 @@ const config = {
         test: /\.html$/, 
         use: ['html-loader'] 
       },
+      {
+        test: /\.vue$/,
+        use: ['vue-loader'] 
+      }
 
     ]
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.common.js'
+      'vue$': 'vue/dist/vue.esm.js'
     }
+  },
+  devServer: {
+    historyApiFallback: true,
+    noInfo: true
   },
   plugins:[
         new webpack.DefinePlugin({
@@ -44,6 +52,6 @@ const config = {
           }
         })
     ]
-};
+}
 
 module.exports = config;

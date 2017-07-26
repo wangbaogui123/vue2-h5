@@ -32,9 +32,12 @@ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appeara
 }
 .box{
 	width: 98%;
-	margin: 0 auto;
-	padding-top:3.5rem; 
-	/*box-shadow: 0px 2px 3px #ccc;*/
+	margin: .3rem auto;
+	min-height:20rem;
+	margin-top:3.3rem;
+	padding-bottom: 1rem;
+	background: #fff; 
+	box-shadow: 0px 2px 3px #ccc;
 }
 .bg-box{
 	width: 100%;

@@ -1,38 +1,53 @@
 import Vue from 'vue'
-import VueRouter  from 'vue-router'
+import routes from './router'
+import axios from 'axios'
 
-Vue.use(VueRouter)
+Vue.prototype.$ajax = axios
 
 require('./css/style.css')
 require('./css/top.css')
+
 require('./component.js')(Vue)
-require('./index.js')(Vue)
-
-const routes = require('./router.js')(Vue,VueRouter)
 
 
-// 创建路由对象
-	const router = new VueRouter({
-	    routes // （缩写）相当于 routes: routes，es6的新语法
-	})
+const app = new Vue({
+	
+	el:"#app",
+	data:{
+		currentRoute: window.location.pathname   
+	},
+	computed:{
+		ViewComponent () {
 
-	var app = new Vue({
-		
-	  el:"#app",
-      router: router,
-      data:{
+			const matchingView = routes[this.currentRoute]
 
-      	page:"H5 Game",
-        topshow:false
-          
-      },
-      methods:{
-	  	topFun:function(){
-	  		app.topshow = !app.topshow;
-	  	}
-	  }
+			return matchingView
+				? require('./views/' + matchingView + '.vue')
+				: require('./views/404.vue')
+		}
+	},
+	render (h) {
+		return h(this.ViewComponent)
+	},
+	methods:{
+		com_Ajax(){
+			this.$ajax({
+				method: 'post',
+				url: '/user',
+				data: {
+					name: 'wise',
+					info: 'wrong'
+				}
+			})
+		}
+	}
 
-    })
+})
+
+
+window.addEventListener('popstate', () => {
+	app.currentRoute = window.location.pathname
+})
 
 
 
