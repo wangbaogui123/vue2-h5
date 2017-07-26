@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import routes from './router'
+import axios from 'axios'
+
+Vue.prototype.$ajax = axios
 
 require('./css/style.css')
 require('./css/top.css')
@@ -18,18 +21,29 @@ const app = new Vue({
 
 			const matchingView = routes[this.currentRoute]
 
-			console.log(require('./views/Home.vue'));
-			return require('./views/Home.vue')
-			// return matchingView
-			// 	? require('./views/' + matchingView + '.vue')
-			// 	: require('./views/404.vue')
+			return matchingView
+				? require('./views/' + matchingView + '.vue')
+				: require('./views/404.vue')
 		}
 	},
 	render (h) {
 		return h(this.ViewComponent)
+	},
+	methods:{
+		com_Ajax(){
+			this.$ajax({
+				method: 'post',
+				url: '/user',
+				data: {
+					name: 'wise',
+					info: 'wrong'
+				}
+			})
+		}
 	}
 
 })
+
 
 window.addEventListener('popstate', () => {
 	app.currentRoute = window.location.pathname
