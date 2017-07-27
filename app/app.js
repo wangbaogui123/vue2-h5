@@ -12,7 +12,6 @@ Vue.component('swipe-item', SwipeItem);
 require('./css/style.css')
 require('./css/top.css')
 require('./component.js')(Vue)
-require('./css/banner.css')
 
 
 const app = new Vue({
