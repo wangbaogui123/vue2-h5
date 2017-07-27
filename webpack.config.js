@@ -14,12 +14,14 @@ const config = {
         test: /\.(js|jsx)$/, 
         use: 'babel-loader'
       },
-      
       {
         test: /\.css$/,
         use: ['style-loader','css-loader']
       },
-
+      {
+        test: /\.less$/,
+        use: ['less-loader']
+      },
       {
         test: /\.(png|jpg|jpeg|gif|woff)$/, 
         use: 'url-loader?limit=4192&name=[name].[ext]' 

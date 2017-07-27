@@ -1,20 +1,25 @@
 import Vue from 'vue'
 import routes from './router'
 import axios from 'axios'
+import { Swipe, SwipeItem } from 'vue-swipe'
 
 Vue.prototype.$ajax = axios
 
+Vue.component('swipe', Swipe);
+Vue.component('swipe-item', SwipeItem);
+
+
 require('./css/style.css')
 require('./css/top.css')
-
 require('./component.js')(Vue)
+require('./css/banner.css')
 
 
 const app = new Vue({
 	
 	el:"#app",
 	data:{
-		currentRoute: window.location.pathname   
+		currentRoute: window.location.pathname    
 	},
 	computed:{
 		ViewComponent () {
@@ -41,6 +46,7 @@ const app = new Vue({
 			})
 		}
 	}
+
 
 })
 

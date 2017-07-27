@@ -2,7 +2,7 @@ module.exports = function(Vue){
 
 
 	let data = {
-		page:"Vue Demo",
+		page:"H5 Game",
 		topshow:false
 	}
 
@@ -36,6 +36,7 @@ module.exports = function(Vue){
 	const footer = new Vue({
 	  el: '#footer'
 	})
+
 
 
 
