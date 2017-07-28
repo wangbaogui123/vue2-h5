@@ -12058,7 +12058,7 @@ exports.push([module.i, ".top{\n\twidth: 100%;\n\theight: auto;\n\tposition: fix
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "\n<div class=\"top\">\n\n    <div class=\"top-bar\">\n        <a href=\"#/\" class=\"left\">\n        <img src=\"" + __webpack_require__(50) + "\" /></a>\n        <p>{{page}}</p>\n        <a class=\"right\" v-on:click=\"topFun()\">\n            <img src=\"" + __webpack_require__(51) + "\" />\n        </a>\n    </div>\n    \n    <div class=\"top-cont bg-box\" v-if = \"topshow\">\n\n        <div class=\"login-box\">\n        <p>\n            <a href=\"/login\">\n                Login \n            </a>\n        </p>\n        <p>\n            <a href=\"/login\">\n                Login \n            </a>\n        </p>       \n        </div>      \n    </div>\n</div>\n\n";
+module.exports = "\n<div class=\"top\">\n\n    <div class=\"top-bar\">\n        <a href=\"/\" class=\"left\">\n        <img src=\"" + __webpack_require__(50) + "\" /></a>\n        <p>{{page}}</p>\n        <a class=\"right\" v-on:click=\"topFun()\">\n            <img src=\"" + __webpack_require__(51) + "\" />\n        </a>\n    </div>\n    \n    <div class=\"top-cont bg-box\" v-if = \"topshow\">\n\n        <div class=\"login-box\">\n        <p>\n            <a href=\"/login\">\n                Login \n            </a>\n        </p>\n        <p>\n            <a href=\"/login\">\n                Login \n            </a>\n        </p>       \n        </div>      \n    </div>\n</div>\n\n";
 
 /***/ }),
 /* 50 */
