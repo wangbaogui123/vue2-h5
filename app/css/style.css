@@ -23,7 +23,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appeara
 @media only screen and (min-width: 600px) and (max-width: 639px) { html { font-size: 165%; } }
 @media only screen and (min-width: 640px) and (max-width: 719px) { html { font-size: 177.5%; } }
 @media only screen and (min-width: 720px) and (max-width: 767px) { html { font-size: 200%; } }
-@media only screen and (min-width: 768px) { html { font-size: 200%; } }
+@media only screen and (min-width: 768px) { html { font-size: 100%; } }
 
 .app{
 	width: 100%;
