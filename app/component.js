@@ -1,7 +1,7 @@
 module.exports = function(Vue,VLink){
 
 	let data = {
-		page:"H5 Game"
+		page:"H5 View"
 	}
 
 	let toptpl = require("./tpl/top.html");

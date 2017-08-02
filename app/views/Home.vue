@@ -12,16 +12,25 @@
                     </swipe-item>
                 </swipe>
                 <div class="home-list">
-                    <ul class="list-ul">
-                        <li v-for="i in list" :key="i.$index">{{i}}</li>
-                    </ul>
+                    <div class="home-list-div">
+                        <ul class="list-ul">
+                            <li v-for="i in list" :key="i.$index">{{i}}</li>
+                        </ul>
+                    </div>   
                 </div>  
-                <div>
-                    <div>
-                        <p></p>
-                        <div></div>
-                        <p></p>
-                        <p></p>
+                <div class="home-view">
+                    <p class="viewtop">热门文章</p>
+                    <div v-for="item in allData" :key="item.$index">
+                        <p><a><img v-bind:src="item.user.avatar"></a><span>{{item.user.nickname}}</span></p>
+                        <p>{{item.title}}</p>
+                        <p>{{item.public_abbr}}</p>
+                        <p> 
+                            <a>
+                                <span>{{item.public_comments_count}}评论</span>
+                                <span v-if="item.likes_count">· {{item.likes_count}}喜欢</span>
+                                <span v-if="item.total_rewards_count">· {{item.total_rewards_count}}赞赏</span>
+                            </a> 
+                        </p>
                     </div>
                 </div>      
             </div>
@@ -59,7 +68,8 @@
                 "We are only separated by a turned distance, but could not meet.",
                 "Dear past, thanks for all lessons, dear future, I am ready!",
                 "I love you not for who you are, but for who I am before you."
-            ]
+            ],
+            allData:""
             
         }
 
@@ -69,15 +79,18 @@
             return homeData
         },
         created:function(){
-            //console.log(this.$parent);
+
             var $this = this.$parent;
 
             $this.com_Ajax({
+
                 method: 'get',
 				url: './app/data/list.json'
+
             },function(data){
                 
-                console.log(data);
+                homeData.allData = data.data
+
             },function(data){
 
                 console.log(data);
