@@ -9,7 +9,6 @@
 	z-index:100;
 }
 .top .top-bar{
-	box-shadow: 1px 3px 5px #ccc;
 	height: 3rem;
 	background: rgba(255,255,255,0.8);
 }
@@ -41,13 +40,12 @@
 	text-shadow: 2px 2px 2px #ccc;
 }
 .top .top-cont{
-	width: 98%;
-	min-height: 30rem;
-	height:auto;
-	/* background: rgba(255,255,255,0.9); */
+	width: 100%;
+	height:100%;
 	color: #333;
-	margin: .5rem auto;
 	box-shadow: 1px 3px 5px #ccc;
+	position: fixed;
+	top:3rem;
 }
 .top .top-cont .login-box{
 	width: 98%;
@@ -64,7 +62,6 @@
 .top .top-cont .login-box a{
 	line-height: 1.9rem;
 	border-bottom: 1px solid #ccc;
-	color: #a6b1b0;
 	text-align: right;
 	width: 10rem;
 	padding-right: 1rem;

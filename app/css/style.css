@@ -9,7 +9,7 @@ textarea{resize:none}
 header,nav,section,article,footer,figure,figcaption{display:block;}
 input[type="text"],input[type="search"],input[type="password"]{ -ms-appearance: none; -o-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; list-style: none;border: none;}
 body{background: #e6e6e6;color:#404040;text-align:center;min-width:320px;width: 100%; min-height: 100%;font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-html {background: #e6e6e6;max-width: 768px; min-width: 320px; width: 100%; min-height: 100%; margin: 0 auto;}
+html {max-width: 768px; min-width: 320px; width: 100%; min-height: 100%; margin: 0 auto;}
 input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
 .clearfix:after{ visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;}
 .clearfix{ zoom:1;}
@@ -60,4 +60,79 @@ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appeara
 	line-height: 1.5rem;
 	height: 1.5rem;
 	text-shadow: 2px 2px 2px #ccc;
+}
+.colorMove{
+	animation:colormove 15s linear infinite;
+    -webkit-animation:colormove 15s linear infinite;
+}
+
+@keyframes colormove {
+    0%{
+        color: #17c6ee;
+    }
+    10%{
+        color: #ec5399;
+    }
+    20%{
+        color: #fff537;
+    }
+    30%{
+        color: #ff4b5a;
+    }
+    40%{
+        color: #57b846;
+    }
+    50%{
+        color: #f74877;
+    }
+    60%{
+        color: #62d8b6;
+    }
+    70%{
+        color: #ff5f3d;
+    }
+    80%{
+        color: #ff8e50;
+    }
+    90%{
+        color: #ffe048;
+    }
+    100%{
+       color: #fa4251;
+    }
+}
+@-webkit-keyframes colormove {
+    0%{
+        color: #17c6ee;
+    }
+    10%{
+        color: #ec5399;
+    }
+    20%{
+        color: #fff537;
+    }
+    30%{
+        color: #ff4b5a;
+    }
+    40%{
+        color: #57b846;
+    }
+    50%{
+        color: #f74877;
+    }
+    60%{
+        color: #62d8b6;
+    }
+    70%{
+        color: #ff5f3d;
+    }
+    80%{
+        color: #ff8e50;
+    }
+    90%{
+        color: #ffe048;
+    }
+    100%{
+       color: #17c6ee;
+    }
 }

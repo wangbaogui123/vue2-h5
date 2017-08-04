@@ -19,7 +19,6 @@ export default (Vue , options = {})=>{
  
   const isAlredyLoad = (imageSrc) => {
 
-    console.log(imageCatcheList.indexOf(imageSrc) > -1);
     if(imageCatcheList.indexOf(imageSrc) > -1){
       return true;
     }else{
@@ -36,7 +35,7 @@ export default (Vue , options = {})=>{
     var windowHeight = window.innerHight;
 
     //top + 10 已经进入了可视区域10像素
-    if(top + 100 < window.innerHeight){
+    if(top + 10 < window.innerHeight){
         
       var image = new Image();
       image.src = src;
