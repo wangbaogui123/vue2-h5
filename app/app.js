@@ -3,6 +3,10 @@ import routes from './router'
 import axios from 'axios'
 import { Swipe, SwipeItem } from 'vue-swipe'
 import VLink from './components/VLink.vue'
+import LazyLoad from './lazyLoad.js'
+
+
+Vue.use(LazyLoad);
 
 Vue.prototype.$ajax = axios
 
@@ -35,6 +39,7 @@ const app = new Vue({
 		return h(this.ViewComponent)
 	},
 	methods:{
+
 		com_Ajax(obj,success,error){
 			this.$ajax(obj).then(function(data){
 

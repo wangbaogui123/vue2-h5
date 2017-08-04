@@ -8,7 +8,7 @@
             <div class="home">   
                 <swipe class="my-swipe">
                     <swipe-item v-for="item in banner" :key="item.$index">
-                        <a v-bind:href="item.href"><img v-bind:src="item.imgUrl" ></a>
+                        <a v-bind:href="item.href" ><img v-lazyload="item.imgUrl"></a>
                     </swipe-item>
                 </swipe>
                 <div class="home-list">
@@ -20,8 +20,8 @@
                 </div>  
                 <div class="home-view">
                     <p class="viewtop">热门文章</p>
-                    <div v-for="item in allData" :key="item.$index">
-                        <p><a><img v-bind:src="item.user.avatar"></a><span>{{item.user.nickname}}</span></p>
+                    <div v-for="(item,index) in allData" :key="item.$index" v-bind:class='{"last":index == allData.length-1}'>
+                        <p><a ><img v-lazyload="item.user.avatar"></a><span>{{item.user.nickname}}</span></p>
                         <p>{{item.title}}</p>
                         <p>{{item.public_abbr}}</p>
                         <p> 
@@ -32,6 +32,7 @@
                             </a> 
                         </p>
                     </div>
+                    <p class="more" v-on:click="moreFun">{{msg}}</p>
                 </div>      
             </div>
         </div>
@@ -69,7 +70,9 @@
                 "Dear past, thanks for all lessons, dear future, I am ready!",
                 "I love you not for who you are, but for who I am before you."
             ],
-            allData:""
+            allData:[],
+            pageIndex:0,
+            msg:"展开更多文章⬇"
             
         }
 
@@ -80,21 +83,40 @@
         },
         created:function(){
 
-            var $this = this.$parent;
+            this.moreFun();
 
-            $this.com_Ajax({
+        },
+        methods:{
 
-                method: 'get',
-				url: './app/data/list.json'
+            moreFun(){
 
-            },function(data){
-                
-                homeData.allData = data.data
+                var $this = this.$parent;
+                var _this = this;
 
-            },function(data){
+                $this.com_Ajax({
 
-                console.log(data);
-            })
+                    method: 'get',
+                    url: './app/data/list.json'
+
+                },function(data){
+                    
+                    for(var i = _this.pageIndex*4;i <  _this.pageIndex*4+4; i++){
+                        
+                        if(data.data[i]){
+                            homeData.allData.push(data.data[i]);
+                        }else{
+                            homeData.msg = "没有更多数据了～"
+                        }
+                    }
+
+                    _this.pageIndex++;
+                     
+                },function(data){
+
+                    console.log(data);
+                })
+
+            }
         }
 
     }
