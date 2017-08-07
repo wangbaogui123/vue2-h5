@@ -17,7 +17,7 @@
                 
                 <button v-on:click="loginFun">登录</button>  
 
-                <p style="color:red;font-size:.8rem;">{{errorMsg}}</p>
+                <p style="color:red;font-size:.8rem;border:none;">{{errorMsg}}</p>
             </div>
             
 
@@ -51,7 +51,7 @@
                         if(login.existingUser[i].user == login.user && login.existingUser[i].password == login.password){
                             
                             window.localStorage.setItem("user",login.user);
-                            window.location.href = "/";
+                            this.$root.currentRoute = "/"
                             login.errorMsg = "";
                         }else{
                             login.errorMsg = "输入账号或密码有误！";

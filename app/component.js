@@ -28,7 +28,9 @@ module.exports = function(Vue,VLink){
 			loginOut:function(){
 				window.localStorage.removeItem("user")
 				this.loginUser = false
-				window.location.href = "/"
+
+				this.$root.currentRoute = "/login"
+			
 			}
 		},
 		components:{
