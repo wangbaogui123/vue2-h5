@@ -8,12 +8,16 @@
             <div class="msg">
                 <p>
                     <span>User Name：</span>
+                    <input type="text" v-model="user" />
                 </p>
                 <p>
                     <span>Password：</span>
+                    <input type="password" v-model="password" />
                 </p>
+                
+                <button v-on:click="loginFun">登录</button>  
 
-                <button>登录</button>  
+                <p style="color:red;font-size:.8rem;">{{errorMsg}}</p>
             </div>
             
 
@@ -21,6 +25,47 @@
          <my-footer></my-footer>   
     </div> 
 </template>
+
+<script>
+    
+    var login = {
+        existingUser:[{user:"wbg@123.com",password:"123"}],
+        user:"wbg@123.com",
+        password:"123",
+        errorMsg:""
+    }
+
+    export default {
+
+        name:"login",
+        data:function(){
+            return login
+        },
+        methods:{
+            loginFun:function(){
+
+                if(login.user && login.password){
+
+                   for(var i=0;i<login.existingUser.length;i++){
+
+                        if(login.existingUser[i].user == login.user && login.existingUser[i].password == login.password){
+                            
+                            window.localStorage.setItem("user",login.user);
+                            window.location.href = "/";
+                            login.errorMsg = "";
+                        }else{
+                            login.errorMsg = "输入账号或密码有误！";
+                        }
+                   } 
+                }else{
+
+                    login.errorMsg = "输入账号或密码为空！";
+                }
+            }
+        }
+    }
+
+</script>
 
 <style scoped>
     .loginbox{
@@ -48,6 +93,14 @@
         height: 2rem;
         margin-top: 2rem;
         line-height: 2rem;
+    }
+    .loginbox .msg p input{
+        display: block;
+        float: left;
+        width: 6rem;
+        height: 2rem;
+        line-height: 2rem;
+        margin-top: 2rem;
     }
     .loginbox .msg button{
         height: 4rem;

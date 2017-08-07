@@ -58,6 +58,7 @@
 	height: 2rem;
 	line-height: 2rem;
 	overflow: hidden;
+	margin: 1rem 0 ; 
 }
 .top .top-cont .login-box a{
 	line-height: 1.9rem;
@@ -68,6 +69,7 @@
 	display: block;
 	float: right;
 	font-size: .9rem;
+	border-right: 2px solid rgba(255,255,255,0.2);
 }
 
 

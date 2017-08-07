@@ -10,7 +10,8 @@ module.exports = function(Vue,VLink){
 	Vue.component("my-top",{
 
 		props:{
-			topShow:[]
+			topShow:[],
+			loginUser:[]
 		},
 		template: toptpl,
 	  	data:function(){
@@ -18,8 +19,17 @@ module.exports = function(Vue,VLink){
 		},
 		methods:{
 		  	topFun:function(){  
-		  		this.topShow = !this.topShow;
-		  	}
+				this.topShow = !this.topShow;
+				if(window.localStorage.getItem("user")){
+					this.loginUser = true
+				}			
+
+			},
+			loginOut:function(){
+				window.localStorage.removeItem("user")
+				this.loginUser = false
+				window.location.href = "/"
+			}
 		},
 		components:{
 		  VLink

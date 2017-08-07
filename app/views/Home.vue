@@ -2,7 +2,7 @@
 <template>
 
     <div>
-        <my-top :top-show="topshow"></my-top>
+        <my-top :top-show="topshow" :login-user="isLogin"></my-top>
     
         <div class="box">
             <div class="home">   
@@ -78,7 +78,7 @@
         }
 
     export default {
-        name:"app",
+        name:"home",
         data:function(){
             return homeData
         },

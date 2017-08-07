@@ -15,11 +15,49 @@
     <div class="top-cont bg-box" v-if = "topShow">
 
         <div class="login-box">
-        <p> 
-            <v-link href="/login" class="colorMove">
-                Login
-            </v-link>
-        </p>      
+            <p v-if="!loginUser"> 
+                <v-link href="/login" class="colorMove">
+                    Login
+                </v-link>
+            </p>
+            <p v-if="loginUser"> 
+                <v-link href="/personal" class="colorMove">
+                    个人中心
+                </v-link>
+            </p>
+            <p> 
+                <v-link href="/personal" class="colorMove">
+                    游戏中心
+                </v-link>
+            </p>
+            <p> 
+                <v-link href="/personal" class="colorMove">
+                    消息
+                </v-link>
+            </p>
+            <p> 
+                <v-link href="/personal" class="colorMove">
+                    关注
+                </v-link>
+            </p>
+            <p> 
+                <v-link href="/personal" class="colorMove">
+                    钱包
+                </v-link>
+            </p>
+            <p> 
+                <v-link href="/personal" class="colorMove">
+                    收藏的文章
+                </v-link>
+            </p>
+
+
+            
+            <p v-if="loginUser"> 
+                <a v-on:click="loginOut" class="colorMove">
+                    登出
+                </a> 
+            </p>        
         </div>      
     </div>
 </div>
