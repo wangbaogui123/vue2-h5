@@ -21,17 +21,19 @@
                 <div class="home-view">
                     <p class="viewtop">热门文章</p>
                     <div v-for="(item,index) in allData" :key="item.$index" v-bind:class='{"last":index == allData.length-1}'>
-                        <p><a ><img v-lazyload="item.user.avatar"></a><span class="colorMove">{{item.user.nickname}}</span></p>
-                        <p> <img v-lazyload="item.list_image_url"></p>
-                        <p>{{item.title}}</p>
-                        <p>{{item.public_abbr}}</p>
-                        <p> 
-                            <a class="colorMove">
-                                <span>{{item.public_comments_count}}评论</span>
-                                <span v-if="item.likes_count">· {{item.likes_count}}喜欢</span>
-                                <span v-if="item.total_rewards_count">· {{item.total_rewards_count}}赞赏</span>
-                            </a> 
-                        </p>
+                        <v-link v-bind:href='/detail/+item.id'>
+                            <p><a ><img v-lazyload="item.user.avatar"></a><span class="colorMove">{{item.user.nickname}}</span></p>
+                            <p> <img v-lazyload="item.list_image_url"></p>
+                            <p>{{item.title}}</p>
+                            <p>{{item.public_abbr}}</p>
+                            <p> 
+                                <a class="colorMove">
+                                    <span>{{item.public_comments_count}}评论</span>
+                                    <span v-if="item.likes_count">· {{item.likes_count}}喜欢</span>
+                                    <span v-if="item.total_rewards_count">· {{item.total_rewards_count}}赞赏</span>
+                                </a> 
+                            </p>
+                        </v-link>
                     </div>
                     <p class="more" v-on:click="moreFun">{{msg}}</p>
                 </div>      
@@ -47,6 +49,7 @@
 <script>
 
     require('../css/home.css')
+    import VLink from '../components/VLink.vue'
 
     var homeData = {
             banner:[
@@ -118,7 +121,10 @@
                 })
 
             }
-        }
+        },
+        components:{
+		  VLink
+	  	}
 
     }
 
