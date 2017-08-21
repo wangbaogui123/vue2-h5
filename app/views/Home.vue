@@ -24,7 +24,7 @@
                         <v-link v-bind:href='/detail/+item.id'>
                             <p><a ><img v-lazyload="item.user.avatar"></a><span class="colorMove">{{item.user.nickname}}</span></p>
                             <p> 
-                                <img v-lazyload="item.list_image_url">
+                                <!-- <img v-lazyload="item.list_image_url"> -->
                             </p>
                             <p>{{item.title}}</p>
                             <p>{{item.public_abbr}}</p>
