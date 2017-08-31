@@ -3,7 +3,7 @@
         <my-top id="top"></my-top>
         <div class="box">
             <div>
-                游戏中心
+                游戏中心222333
             </div>
         </div>
         <my-footer></my-footer>   

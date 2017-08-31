@@ -10,8 +10,8 @@ module.exports = function(Vue,VLink){
 	Vue.component("my-top",{
 
 		props:{
-			topShow:[],
-			loginUser:[]
+			topShow:"",
+			loginUser:""
 		},
 		template: toptpl,
 	  	data:function(){

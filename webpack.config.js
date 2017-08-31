@@ -2,7 +2,12 @@ const webpack = require('webpack'); //to access built-in plugins
 const path = require('path');
 
 const config = {
-  entry: './app/app.js',
+  entry:{
+      app:[path.join(__dirname,'./app/app.js'),
+            'webpack-dev-server/client?http://localhost:8080/'
+          ]
+  },
+  //entry: './app/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -43,17 +48,14 @@ const config = {
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
-  devServer: {
-    historyApiFallback: true,
-    noInfo: true
-  },
   plugins:[
-        new webpack.DefinePlugin({
-          'process.env': {
-            NODE_ENV: '"production"'
-          }
-        })
-  ]
+        new webpack.HotModuleReplacementPlugin()
+    ],
+  devServer: {
+    hot:false,
+    inline:true
+  }
+
 }
 
 module.exports = config;
