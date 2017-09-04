@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2b36bda39a280297e227"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "29ebde0ba40b0ff8605f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(72)(__webpack_require__.s = 72);
+/******/ 	return hotCreateRequire(32)(__webpack_require__.s = 32);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -714,8 +714,8 @@
 "use strict";
 
 
-var bind = __webpack_require__(19);
-var isBuffer = __webpack_require__(44);
+var bind = __webpack_require__(20);
+var isBuffer = __webpack_require__(51);
 
 /*global toString:true*/
 
@@ -10403,7 +10403,7 @@ function getOuterHTML(el) {
 Vue$3.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["default"] = (Vue$3);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4), __webpack_require__(53)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4), __webpack_require__(58)))
 
 /***/ }),
 /* 4 */
@@ -10700,7 +10700,7 @@ module.exports = function normalizeComponent (
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(0);
-var normalizeHeaderName = __webpack_require__(41);
+var normalizeHeaderName = __webpack_require__(48);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -10716,10 +10716,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(15);
+    adapter = __webpack_require__(16);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(15);
+    adapter = __webpack_require__(16);
   }
   return adapter;
 }
@@ -10794,7 +10794,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, ".mint-swipe,.mint-swipe-items-wrap{overflow:hidden;position:relative;height:100%}\n.mint-swipe-items-wrap>div{position:absolute;-webkit-transform:translateX(-100%);\ntransform:translateX(-100%);width:100%;height:auto;display:none}\n.mint-swipe-items-wrap>div.is-active{display:block;-webkit-transform:none;transform:none}\n.mint-swipe-indicators{position:absolute;bottom:10px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}\n.mint-swipe-indicator{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2;margin:0 3px}\n.mint-swipe-indicator.is-active{background:#fff}\n.my-swipe {\n    height: 12rem;\n    color: #fff;\n    font-size: 30px;\n    text-align: center;\n    box-shadow:0 0 2px 2px #ccc;\n    background: #fff;\n}\n.my-swipe a{\n    display: block;\n    width:100%;\n    height: auto\n}\n.my-swipe a img{\n    display: block;\n    width: 100%;\n    margin: 0 auto;\n}\n.home-list{\n    width: 100%;\n    background: #fff;\n    height: 1rem;\n    padding: .5rem 0;\n    margin: .3rem 0;\n    color: #a6b1b0;\n    text-shadow: 2px 2px 2px #ccc;\n    overflow: hidden;\n    box-shadow:0 0 2px 2px #ccc;\n}\n.home-list .home-list-div{\n    width: 90%;\n    height: 1rem;\n    margin: 0 auto;\n    overflow:hidden; \n}\n.home-list ul{\n    width: 100%;\n    height: auto;\n}\n.home-list ul.list-ul{\n    animation:mymove 20s linear infinite;\n    -webkit-animation:mymove 20s linear infinite;\n}\n\n@keyframes mymove {\n    0%{\n        transform: translateY(0%)\n    }\n    100%{\n       transform: translateY(-95%) \n    }\n}\n@-webkit-keyframes mymove {\n    0%{\n        transform: translateY(0%)\n    }\n    100%{\n       transform: translateY(-95%) \n    }\n}\n.home-list ul li{\n    height: 2rem;\n    line-height: 2rem;\n    text-overflow:ellipsis;\n    white-space:nowrap;\n    overflow:hidden;\n    text-indent: 1rem;\n    color: #a6b1b0;\n    font-weight: 100;\n}\n.home-view{\n    background: #fff;\n    box-shadow:0 0 2px 2px #ccc;\n    height: auto;\n    background: url(" + __webpack_require__(59) + ") repeat-y; \n    background-size: 100% auto;\n}\n.home-view .viewtop{\n    text-align: left;\n    text-indent: 1rem;\n    height: 2rem;\n    line-height: 2rem;\n    border-bottom: 1px solid #ccc;\n    color:#a6b1b0;\n    font-size: .9rem;\n    background: rgba(255,255,255,0.9);\n}\n.home-view div{\n    height: auto;\n    margin: 0 auto;\n    margin-bottom: .2rem;\n    padding: .5rem 1rem;;\n    background: rgba(255,255,255,0.8);\n    border-bottom: 1px solid #fff;\n}\n.home-view div.last{\n    margin-bottom:0;\n}\n.home-view div p{\n    width: 100%;\n    line-height: 2rem;\n}\n.home-view div p:nth-child(2){\n    width: 100%;\n    height: 10rem;\n    overflow: hidden;\n    box-sizing: border-box;\n    margin-top: .5rem;\n    background: #ccc;\n    box-shadow: 2px 2px 2px #ccc;\n}\n.home-view div p:nth-child(2) img{\n    display: block;\n    width:100%;\n    opacity: 1;\n}\n.home-view div p:nth-child(3){\n    width: 100%;\n    font-size: .9rem;\n    text-align: left;\n}\n.home-view div p:nth-child(4){\n    width: 100%;\n    font-size: .8rem;\n    text-align: left;\n    color: #a6b1b0;\n    text-indent: 1.6rem;\n    line-height: 1.5rem;\n}\n.home-view div p:nth-child(5){\n    width: 100%;\n    font-size: .7rem;\n    height: 1.3rem;\n    overflow: hidden;\n}\n.home-view div p:nth-child(5) a{\n    float:right;\n    color: #a6b1b0;\n    line-height: 1.3rem;\n}\n.home-view div p:nth-child(1){\n    width: 100%;\n    height: 2rem;\n}\n.home-view div p:nth-child(1) a{\n    display: block;\n    float: left;\n    width: 2rem;\n    height: 2rem;\n    border-radius: 1rem;\n    overflow:hidden;\n    border:1px solid #ddd; \n    box-sizing:border-box;\n}\n.home-view div p:nth-child(1) a img{\n    display: block;\n    width: 100%;\n}\n.home-view div p:nth-child(1) span{\n    display: block;\n    float: left;\n    height: 2rem;\n    line-height: 2rem;\n    text-indent: .5rem;\n    color: #333;\n    font-size: .8rem;\n}\n\n.home-view .more{\n    width:100%;\n    height: 2rem;\n    background: #fff;\n    color: #a6b1b0;\n    text-align: center;\n    line-height: 2rem;\n    font-weight: 500;\n    border-top:1px solid #ccc;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, ".mint-swipe,.mint-swipe-items-wrap{overflow:hidden;position:relative;height:100%}\n.mint-swipe-items-wrap>div{position:absolute;-webkit-transform:translateX(-100%);\ntransform:translateX(-100%);width:100%;height:auto;display:none}\n.mint-swipe-items-wrap>div.is-active{display:block;-webkit-transform:none;transform:none}\n.mint-swipe-indicators{position:absolute;bottom:10px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}\n.mint-swipe-indicator{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2;margin:0 3px}\n.mint-swipe-indicator.is-active{background:#fff}\n.my-swipe {\n    height: 12rem;\n    color: #fff;\n    font-size: 30px;\n    text-align: center;\n    box-shadow:0 0 2px 2px #ccc;\n    background: #fff;\n}\n.my-swipe a{\n    display: block;\n    width:100%;\n    height: auto\n}\n.my-swipe a img{\n    display: block;\n    width: 100%;\n    margin: 0 auto;\n}\n.home-list{\n    width: 100%;\n    background: #fff;\n    height: 1rem;\n    padding: .5rem 0;\n    margin: .3rem 0;\n    color: #a6b1b0;\n    text-shadow: 2px 2px 2px #ccc;\n    overflow: hidden;\n    box-shadow:0 0 2px 2px #ccc;\n}\n.home-list .home-list-div{\n    width: 90%;\n    height: 1rem;\n    margin: 0 auto;\n    overflow:hidden; \n}\n.home-list ul{\n    width: 100%;\n    height: auto;\n}\n.home-list ul.list-ul{\n    animation:mymove 20s linear infinite;\n    -webkit-animation:mymove 20s linear infinite;\n}\n\n@keyframes mymove {\n    0%{\n        transform: translateY(0%)\n    }\n    100%{\n       transform: translateY(-95%) \n    }\n}\n@-webkit-keyframes mymove {\n    0%{\n        transform: translateY(0%)\n    }\n    100%{\n       transform: translateY(-95%) \n    }\n}\n.home-list ul li{\n    height: 2rem;\n    line-height: 2rem;\n    text-overflow:ellipsis;\n    white-space:nowrap;\n    overflow:hidden;\n    text-indent: 1rem;\n    color: #a6b1b0;\n    font-weight: 100;\n}\n.home-view{\n    background: #fff;\n    box-shadow:0 0 2px 2px #ccc;\n    height: auto;\n    background: url(" + __webpack_require__(62) + ") repeat-y; \n    background-size: 100% auto;\n}\n.home-view .viewtop{\n    text-align: left;\n    text-indent: 1rem;\n    height: 2rem;\n    line-height: 2rem;\n    border-bottom: 1px solid #ccc;\n    color:#a6b1b0;\n    font-size: .9rem;\n    background: rgba(255,255,255,0.9);\n}\n.home-view div{\n    height: auto;\n    margin: 0 auto;\n    margin-bottom: .2rem;\n    padding: .5rem 1rem;;\n    background: rgba(255,255,255,0.8);\n    border-bottom: 1px solid #fff;\n}\n.home-view div.last{\n    margin-bottom:0;\n}\n.home-view div p{\n    width: 100%;\n    line-height: 2rem;\n}\n.home-view div p:nth-child(2){\n    width: 100%;\n    height: 10rem;\n    overflow: hidden;\n    box-sizing: border-box;\n    margin-top: .5rem;\n    background: #ccc;\n    box-shadow: 2px 2px 2px #ccc;\n}\n.home-view div p:nth-child(2) img{\n    display: block;\n    width:100%;\n    opacity: 1;\n}\n.home-view div p:nth-child(3){\n    width: 100%;\n    font-size: .9rem;\n    text-align: left;\n}\n.home-view div p:nth-child(4){\n    width: 100%;\n    font-size: .8rem;\n    text-align: left;\n    color: #a6b1b0;\n    text-indent: 1.6rem;\n    line-height: 1.5rem;\n}\n.home-view div p:nth-child(5){\n    width: 100%;\n    font-size: .7rem;\n    height: 1.3rem;\n    overflow: hidden;\n}\n.home-view div p:nth-child(5) a{\n    float:right;\n    color: #a6b1b0;\n    line-height: 1.3rem;\n}\n.home-view div p:nth-child(1){\n    width: 100%;\n    height: 2rem;\n}\n.home-view div p:nth-child(1) a{\n    display: block;\n    float: left;\n    width: 2rem;\n    height: 2rem;\n    border-radius: 1rem;\n    overflow:hidden;\n    border:1px solid #ddd; \n    box-sizing:border-box;\n}\n.home-view div p:nth-child(1) a img{\n    display: block;\n    width: 100%;\n}\n.home-view div p:nth-child(1) span{\n    display: block;\n    float: left;\n    height: 2rem;\n    line-height: 2rem;\n    text-indent: .5rem;\n    color: #333;\n    font-size: .8rem;\n}\n\n.home-view .more{\n    width:100%;\n    height: 2rem;\n    background: #fff;\n    color: #a6b1b0;\n    text-align: center;\n    line-height: 2rem;\n    font-weight: 500;\n    border-top:1px solid #ccc;\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -10907,7 +10907,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(45);
+	fixUrls = __webpack_require__(52);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -11202,7 +11202,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(51)
+var listToStyles = __webpack_require__(57)
 
 /*
 type StyleObject = {
@@ -11407,16 +11407,60 @@ function applyToTag (styleElement, obj) {
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(69)
+}
+var Component = __webpack_require__(5)(
+  /* script */
+  __webpack_require__(53),
+  /* template */
+  __webpack_require__(65),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-5a9978d8",
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/Users/linkedme021/linked-wbg/vue2-h5/app/components/VLink.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] VLink.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (true) {(function () {
+  var hotAPI = __webpack_require__(1)
+  hotAPI.install(__webpack_require__(3), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5a9978d8", Component.options)
+  } else {
+    hotAPI.reload("data-v-5a9978d8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(0);
-var settle = __webpack_require__(33);
-var buildURL = __webpack_require__(36);
-var parseHeaders = __webpack_require__(42);
-var isURLSameOrigin = __webpack_require__(40);
-var createError = __webpack_require__(18);
-var btoa = typeof window !== 'undefined' && window.btoa && window.btoa.bind(window) || __webpack_require__(35);
+var settle = __webpack_require__(40);
+var buildURL = __webpack_require__(43);
+var parseHeaders = __webpack_require__(49);
+var isURLSameOrigin = __webpack_require__(47);
+var createError = __webpack_require__(19);
+var btoa = typeof window !== 'undefined' && window.btoa && window.btoa.bind(window) || __webpack_require__(42);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -11509,7 +11553,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(38);
+      var cookies = __webpack_require__(45);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ? cookies.read(config.xsrfCookieName) : undefined;
@@ -11585,7 +11629,7 @@ module.exports = function xhrAdapter(config) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11611,7 +11655,7 @@ Cancel.prototype.__CANCEL__ = true;
 module.exports = Cancel;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11622,13 +11666,13 @@ module.exports = function isCancel(value) {
 };
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(32);
+var enhanceError = __webpack_require__(39);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -11646,7 +11690,7 @@ module.exports = function createError(message, config, code, request, response) 
 };
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11663,141 +11707,7 @@ module.exports = function bind(fn, thisArg) {
 };
 
 /***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(69)
-}
-var Component = __webpack_require__(5)(
-  /* script */
-  __webpack_require__(46),
-  /* template */
-  __webpack_require__(65),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  "data-v-5a9978d8",
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "/Users/linkedme021/linked-wbg/vue2-h5/app/components/VLink.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] VLink.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (true) {(function () {
-  var hotAPI = __webpack_require__(1)
-  hotAPI.install(__webpack_require__(3), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5a9978d8", Component.options)
-  } else {
-    hotAPI.reload("data-v-5a9978d8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
 /* 21 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_swipe__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_swipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue_swipe__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_VLink_vue__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_VLink_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_VLink_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lazyLoad_js__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__touch_js__ = __webpack_require__(25);
-
-//import routes from './router'
-
-
-
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_5__lazyLoad_js__["a" /* default */]);
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_6__touch_js__["a" /* default */]);
-
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].prototype.$ajax = __WEBPACK_IMPORTED_MODULE_2_axios___default.a;
-
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component('swipe', __WEBPACK_IMPORTED_MODULE_3_vue_swipe__["Swipe"]);
-__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component('swipe-item', __WEBPACK_IMPORTED_MODULE_3_vue_swipe__["SwipeItem"]);
-
-__webpack_require__(57);
-__webpack_require__(58);
-__webpack_require__(22)(__WEBPACK_IMPORTED_MODULE_0_vue__["default"], __WEBPACK_IMPORTED_MODULE_4__components_VLink_vue___default.a);
-
-const Home = __webpack_require__(62);
-const Login = __webpack_require__(63);
-const Table = __webpack_require__(64);
-
-const routes = [{ path: '/', component: Home }, { path: '/login', component: Login }, { path: '/table', component: Table }];
-
-const router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
-	history: false,
-	hashbang: true,
-	routes
-});
-
-const app = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
-
-	el: "#app",
-	data: {
-		currentRoute: window.location.pathname,
-		topshow: false,
-		isLogin: false
-	},
-	// computed:{
-	// 	ViewComponent () {
-
-	// 		const matchingView = routes[this.currentRoute]
-	// 		return matchingView
-	// 			? require('./views/' + matchingView + '.vue')
-	// 			: require('./views/404.vue')
-	// 	}
-	// },
-	// render (h) {
-	// 	return h(this.ViewComponent)
-	// },
-	methods: {
-
-		com_Ajax(obj, success, error) {
-			this.$ajax(obj).then(function (data) {
-
-				success(data);
-			}, function (data) {
-
-				error(data);
-			});
-		}
-	},
-	router
-
-});
-
-// window.addEventListener('popstate', () => {
-// 	app.currentRoute = window.location.pathname
-// })
-
-/***/ }),
-/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function (Vue, VLink) {
@@ -11806,7 +11716,7 @@ module.exports = function (Vue, VLink) {
 		page: "H5 View"
 	};
 
-	let toptpl = __webpack_require__(55);
+	let toptpl = __webpack_require__(60);
 
 	// 注册组件my-top
 	Vue.component("my-top", {
@@ -11846,7 +11756,7 @@ module.exports = function (Vue, VLink) {
 };
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11942,23 +11852,7 @@ module.exports = function (Vue, VLink) {
 });
 
 /***/ }),
-/* 24 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-  '/': 'Home',
-  '/login': 'Login',
-  '/detail/:id': 'Detail',
-  '/personal': 'Personal',
-  '/game': 'Game',
-  '/messages': 'Messages',
-  '/wallet': 'Wallet',
-  '/table': 'Table'
-});
-
-/***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12016,1234 +11910,13 @@ module.exports = function (Vue, VLink) {
 });
 
 /***/ }),
-/* 26 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(27);
+module.exports = __webpack_require__(34);
 
 /***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-var bind = __webpack_require__(19);
-var Axios = __webpack_require__(29);
-var defaults = __webpack_require__(6);
-
-/**
- * Create an instance of Axios
- *
- * @param {Object} defaultConfig The default config for the instance
- * @return {Axios} A new instance of Axios
- */
-function createInstance(defaultConfig) {
-  var context = new Axios(defaultConfig);
-  var instance = bind(Axios.prototype.request, context);
-
-  // Copy axios.prototype to instance
-  utils.extend(instance, Axios.prototype, context);
-
-  // Copy context to instance
-  utils.extend(instance, context);
-
-  return instance;
-}
-
-// Create the default instance to be exported
-var axios = createInstance(defaults);
-
-// Expose Axios class to allow class inheritance
-axios.Axios = Axios;
-
-// Factory for creating new instances
-axios.create = function create(instanceConfig) {
-  return createInstance(utils.merge(defaults, instanceConfig));
-};
-
-// Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(16);
-axios.CancelToken = __webpack_require__(28);
-axios.isCancel = __webpack_require__(17);
-
-// Expose all/spread
-axios.all = function all(promises) {
-  return Promise.all(promises);
-};
-axios.spread = __webpack_require__(43);
-
-module.exports = axios;
-
-// Allow use of default import syntax in TypeScript
-module.exports.default = axios;
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var Cancel = __webpack_require__(16);
-
-/**
- * A `CancelToken` is an object that can be used to request cancellation of an operation.
- *
- * @class
- * @param {Function} executor The executor function.
- */
-function CancelToken(executor) {
-  if (typeof executor !== 'function') {
-    throw new TypeError('executor must be a function.');
-  }
-
-  var resolvePromise;
-  this.promise = new Promise(function promiseExecutor(resolve) {
-    resolvePromise = resolve;
-  });
-
-  var token = this;
-  executor(function cancel(message) {
-    if (token.reason) {
-      // Cancellation has already been requested
-      return;
-    }
-
-    token.reason = new Cancel(message);
-    resolvePromise(token.reason);
-  });
-}
-
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */
-CancelToken.prototype.throwIfRequested = function throwIfRequested() {
-  if (this.reason) {
-    throw this.reason;
-  }
-};
-
-/**
- * Returns an object that contains a new `CancelToken` and a function that, when called,
- * cancels the `CancelToken`.
- */
-CancelToken.source = function source() {
-  var cancel;
-  var token = new CancelToken(function executor(c) {
-    cancel = c;
-  });
-  return {
-    token: token,
-    cancel: cancel
-  };
-};
-
-module.exports = CancelToken;
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var defaults = __webpack_require__(6);
-var utils = __webpack_require__(0);
-var InterceptorManager = __webpack_require__(30);
-var dispatchRequest = __webpack_require__(31);
-var isAbsoluteURL = __webpack_require__(39);
-var combineURLs = __webpack_require__(37);
-
-/**
- * Create a new instance of Axios
- *
- * @param {Object} instanceConfig The default config for the instance
- */
-function Axios(instanceConfig) {
-  this.defaults = instanceConfig;
-  this.interceptors = {
-    request: new InterceptorManager(),
-    response: new InterceptorManager()
-  };
-}
-
-/**
- * Dispatch a request
- *
- * @param {Object} config The config specific for this request (merged with this.defaults)
- */
-Axios.prototype.request = function request(config) {
-  /*eslint no-param-reassign:0*/
-  // Allow for axios('example/url'[, config]) a la fetch API
-  if (typeof config === 'string') {
-    config = utils.merge({
-      url: arguments[0]
-    }, arguments[1]);
-  }
-
-  config = utils.merge(defaults, this.defaults, { method: 'get' }, config);
-  config.method = config.method.toLowerCase();
-
-  // Support baseURL config
-  if (config.baseURL && !isAbsoluteURL(config.url)) {
-    config.url = combineURLs(config.baseURL, config.url);
-  }
-
-  // Hook up interceptors middleware
-  var chain = [dispatchRequest, undefined];
-  var promise = Promise.resolve(config);
-
-  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
-    chain.unshift(interceptor.fulfilled, interceptor.rejected);
-  });
-
-  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
-    chain.push(interceptor.fulfilled, interceptor.rejected);
-  });
-
-  while (chain.length) {
-    promise = promise.then(chain.shift(), chain.shift());
-  }
-
-  return promise;
-};
-
-// Provide aliases for supported request methods
-utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
-  /*eslint func-names:0*/
-  Axios.prototype[method] = function (url, config) {
-    return this.request(utils.merge(config || {}, {
-      method: method,
-      url: url
-    }));
-  };
-});
-
-utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  /*eslint func-names:0*/
-  Axios.prototype[method] = function (url, data, config) {
-    return this.request(utils.merge(config || {}, {
-      method: method,
-      url: url,
-      data: data
-    }));
-  };
-});
-
-module.exports = Axios;
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-
-function InterceptorManager() {
-  this.handlers = [];
-}
-
-/**
- * Add a new interceptor to the stack
- *
- * @param {Function} fulfilled The function to handle `then` for a `Promise`
- * @param {Function} rejected The function to handle `reject` for a `Promise`
- *
- * @return {Number} An ID used to remove interceptor later
- */
-InterceptorManager.prototype.use = function use(fulfilled, rejected) {
-  this.handlers.push({
-    fulfilled: fulfilled,
-    rejected: rejected
-  });
-  return this.handlers.length - 1;
-};
-
-/**
- * Remove an interceptor from the stack
- *
- * @param {Number} id The ID that was returned by `use`
- */
-InterceptorManager.prototype.eject = function eject(id) {
-  if (this.handlers[id]) {
-    this.handlers[id] = null;
-  }
-};
-
-/**
- * Iterate over all the registered interceptors
- *
- * This method is particularly useful for skipping over any
- * interceptors that may have become `null` calling `eject`.
- *
- * @param {Function} fn The function to call for each interceptor
- */
-InterceptorManager.prototype.forEach = function forEach(fn) {
-  utils.forEach(this.handlers, function forEachHandler(h) {
-    if (h !== null) {
-      fn(h);
-    }
-  });
-};
-
-module.exports = InterceptorManager;
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-var transformData = __webpack_require__(34);
-var isCancel = __webpack_require__(17);
-var defaults = __webpack_require__(6);
-
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */
-function throwIfCancellationRequested(config) {
-  if (config.cancelToken) {
-    config.cancelToken.throwIfRequested();
-  }
-}
-
-/**
- * Dispatch a request to the server using the configured adapter.
- *
- * @param {object} config The config that is to be used for the request
- * @returns {Promise} The Promise to be fulfilled
- */
-module.exports = function dispatchRequest(config) {
-  throwIfCancellationRequested(config);
-
-  // Ensure headers exist
-  config.headers = config.headers || {};
-
-  // Transform request data
-  config.data = transformData(config.data, config.headers, config.transformRequest);
-
-  // Flatten headers
-  config.headers = utils.merge(config.headers.common || {}, config.headers[config.method] || {}, config.headers || {});
-
-  utils.forEach(['delete', 'get', 'head', 'post', 'put', 'patch', 'common'], function cleanHeaderConfig(method) {
-    delete config.headers[method];
-  });
-
-  var adapter = config.adapter || defaults.adapter;
-
-  return adapter(config).then(function onAdapterResolution(response) {
-    throwIfCancellationRequested(config);
-
-    // Transform response data
-    response.data = transformData(response.data, response.headers, config.transformResponse);
-
-    return response;
-  }, function onAdapterRejection(reason) {
-    if (!isCancel(reason)) {
-      throwIfCancellationRequested(config);
-
-      // Transform response data
-      if (reason && reason.response) {
-        reason.response.data = transformData(reason.response.data, reason.response.headers, config.transformResponse);
-      }
-    }
-
-    return Promise.reject(reason);
-  });
-};
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Update an Error with the specified config, error code, and response.
- *
- * @param {Error} error The error to update.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The error.
- */
-
-module.exports = function enhanceError(error, config, code, request, response) {
-  error.config = config;
-  if (code) {
-    error.code = code;
-  }
-  error.request = request;
-  error.response = response;
-  return error;
-};
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var createError = __webpack_require__(18);
-
-/**
- * Resolve or reject a Promise based on response status.
- *
- * @param {Function} resolve A function that resolves the promise.
- * @param {Function} reject A function that rejects the promise.
- * @param {object} response The response.
- */
-module.exports = function settle(resolve, reject, response) {
-  var validateStatus = response.config.validateStatus;
-  // Note: status is not exposed by XDomainRequest
-  if (!response.status || !validateStatus || validateStatus(response.status)) {
-    resolve(response);
-  } else {
-    reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
-  }
-};
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-
-/**
- * Transform the data for a request or a response
- *
- * @param {Object|String} data The data to be transformed
- * @param {Array} headers The headers for the request or response
- * @param {Array|Function} fns A single function or Array of functions
- * @returns {*} The resulting transformed data
- */
-module.exports = function transformData(data, headers, fns) {
-  /*eslint no-param-reassign:0*/
-  utils.forEach(fns, function transform(fn) {
-    data = fn(data, headers);
-  });
-
-  return data;
-};
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
-
-var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-
-function E() {
-  this.message = 'String contains an invalid character';
-}
-E.prototype = new Error();
-E.prototype.code = 5;
-E.prototype.name = 'InvalidCharacterError';
-
-function btoa(input) {
-  var str = String(input);
-  var output = '';
-  for (
-  // initialize result and counter
-  var block, charCode, idx = 0, map = chars;
-  // if the next str index does not exist:
-  //   change the mapping table to "="
-  //   check if d has no fractional digits
-  str.charAt(idx | 0) || (map = '=', idx % 1);
-  // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
-  output += map.charAt(63 & block >> 8 - idx % 1 * 8)) {
-    charCode = str.charCodeAt(idx += 3 / 4);
-    if (charCode > 0xFF) {
-      throw new E();
-    }
-    block = block << 8 | charCode;
-  }
-  return output;
-}
-
-module.exports = btoa;
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-
-function encode(val) {
-  return encodeURIComponent(val).replace(/%40/gi, '@').replace(/%3A/gi, ':').replace(/%24/g, '$').replace(/%2C/gi, ',').replace(/%20/g, '+').replace(/%5B/gi, '[').replace(/%5D/gi, ']');
-}
-
-/**
- * Build a URL by appending params to the end
- *
- * @param {string} url The base of the url (e.g., http://www.google.com)
- * @param {object} [params] The params to be appended
- * @returns {string} The formatted url
- */
-module.exports = function buildURL(url, params, paramsSerializer) {
-  /*eslint no-param-reassign:0*/
-  if (!params) {
-    return url;
-  }
-
-  var serializedParams;
-  if (paramsSerializer) {
-    serializedParams = paramsSerializer(params);
-  } else if (utils.isURLSearchParams(params)) {
-    serializedParams = params.toString();
-  } else {
-    var parts = [];
-
-    utils.forEach(params, function serialize(val, key) {
-      if (val === null || typeof val === 'undefined') {
-        return;
-      }
-
-      if (utils.isArray(val)) {
-        key = key + '[]';
-      }
-
-      if (!utils.isArray(val)) {
-        val = [val];
-      }
-
-      utils.forEach(val, function parseValue(v) {
-        if (utils.isDate(v)) {
-          v = v.toISOString();
-        } else if (utils.isObject(v)) {
-          v = JSON.stringify(v);
-        }
-        parts.push(encode(key) + '=' + encode(v));
-      });
-    });
-
-    serializedParams = parts.join('&');
-  }
-
-  if (serializedParams) {
-    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
-  }
-
-  return url;
-};
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Creates a new URL by combining the specified URLs
- *
- * @param {string} baseURL The base URL
- * @param {string} relativeURL The relative URL
- * @returns {string} The combined URL
- */
-
-module.exports = function combineURLs(baseURL, relativeURL) {
-  return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
-};
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-
-module.exports = utils.isStandardBrowserEnv() ?
-
-// Standard browser envs support document.cookie
-function standardBrowserEnv() {
-  return {
-    write: function write(name, value, expires, path, domain, secure) {
-      var cookie = [];
-      cookie.push(name + '=' + encodeURIComponent(value));
-
-      if (utils.isNumber(expires)) {
-        cookie.push('expires=' + new Date(expires).toGMTString());
-      }
-
-      if (utils.isString(path)) {
-        cookie.push('path=' + path);
-      }
-
-      if (utils.isString(domain)) {
-        cookie.push('domain=' + domain);
-      }
-
-      if (secure === true) {
-        cookie.push('secure');
-      }
-
-      document.cookie = cookie.join('; ');
-    },
-
-    read: function read(name) {
-      var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
-      return match ? decodeURIComponent(match[3]) : null;
-    },
-
-    remove: function remove(name) {
-      this.write(name, '', Date.now() - 86400000);
-    }
-  };
-}() :
-
-// Non standard browser env (web workers, react-native) lack needed support.
-function nonStandardBrowserEnv() {
-  return {
-    write: function write() {},
-    read: function read() {
-      return null;
-    },
-    remove: function remove() {}
-  };
-}();
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Determines whether the specified URL is absolute
- *
- * @param {string} url The URL to test
- * @returns {boolean} True if the specified URL is absolute, otherwise false
- */
-
-module.exports = function isAbsoluteURL(url) {
-  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
-  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
-  // by any combination of letters, digits, plus, period, or hyphen.
-  return (/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url)
-  );
-};
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-
-module.exports = utils.isStandardBrowserEnv() ?
-
-// Standard browser envs have full support of the APIs needed to test
-// whether the request URL is of the same origin as current location.
-function standardBrowserEnv() {
-  var msie = /(msie|trident)/i.test(navigator.userAgent);
-  var urlParsingNode = document.createElement('a');
-  var originURL;
-
-  /**
-  * Parse a URL to discover it's components
-  *
-  * @param {String} url The URL to be parsed
-  * @returns {Object}
-  */
-  function resolveURL(url) {
-    var href = url;
-
-    if (msie) {
-      // IE needs attribute set twice to normalize properties
-      urlParsingNode.setAttribute('href', href);
-      href = urlParsingNode.href;
-    }
-
-    urlParsingNode.setAttribute('href', href);
-
-    // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
-    return {
-      href: urlParsingNode.href,
-      protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
-      host: urlParsingNode.host,
-      search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
-      hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
-      hostname: urlParsingNode.hostname,
-      port: urlParsingNode.port,
-      pathname: urlParsingNode.pathname.charAt(0) === '/' ? urlParsingNode.pathname : '/' + urlParsingNode.pathname
-    };
-  }
-
-  originURL = resolveURL(window.location.href);
-
-  /**
-  * Determine if a URL shares the same origin as the current location
-  *
-  * @param {String} requestURL The URL to test
-  * @returns {boolean} True if URL shares the same origin, otherwise false
-  */
-  return function isURLSameOrigin(requestURL) {
-    var parsed = utils.isString(requestURL) ? resolveURL(requestURL) : requestURL;
-    return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
-  };
-}() :
-
-// Non standard browser envs (web workers, react-native) lack needed support.
-function nonStandardBrowserEnv() {
-  return function isURLSameOrigin() {
-    return true;
-  };
-}();
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-
-module.exports = function normalizeHeaderName(headers, normalizedName) {
-  utils.forEach(headers, function processHeader(value, name) {
-    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
-      headers[normalizedName] = value;
-      delete headers[name];
-    }
-  });
-};
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var utils = __webpack_require__(0);
-
-/**
- * Parse headers into an object
- *
- * ```
- * Date: Wed, 27 Aug 2014 08:58:49 GMT
- * Content-Type: application/json
- * Connection: keep-alive
- * Transfer-Encoding: chunked
- * ```
- *
- * @param {String} headers Headers needing to be parsed
- * @returns {Object} Headers parsed into an object
- */
-module.exports = function parseHeaders(headers) {
-  var parsed = {};
-  var key;
-  var val;
-  var i;
-
-  if (!headers) {
-    return parsed;
-  }
-
-  utils.forEach(headers.split('\n'), function parser(line) {
-    i = line.indexOf(':');
-    key = utils.trim(line.substr(0, i)).toLowerCase();
-    val = utils.trim(line.substr(i + 1));
-
-    if (key) {
-      parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-    }
-  });
-
-  return parsed;
-};
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Syntactic sugar for invoking a function and expanding an array for arguments.
- *
- * Common use case would be to use `Function.prototype.apply`.
- *
- *  ```js
- *  function f(x, y, z) {}
- *  var args = [1, 2, 3];
- *  f.apply(null, args);
- *  ```
- *
- * With `spread` this example can be re-written.
- *
- *  ```js
- *  spread(function(x, y, z) {})([1, 2, 3]);
- *  ```
- *
- * @param {Function} callback
- * @returns {Function}
- */
-
-module.exports = function spread(callback) {
-  return function wrap(arr) {
-    return callback.apply(null, arr);
-  };
-};
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
- * @license  MIT
- */
-
-// The _isBuffer check is for Safari 5-7 support, because it's missing
-// Object.prototype.constructor. Remove this eventually
-module.exports = function (obj) {
-  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer);
-};
-
-function isBuffer(obj) {
-  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj);
-}
-
-// For Node v0.10 support. Remove this eventually.
-function isSlowBuffer(obj) {
-  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0));
-}
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-	// get current location
-	var location = typeof window !== "undefined" && window.location;
-
-	if (!location) {
-		throw new Error("fixUrls requires window.location");
-	}
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-		return css;
-	}
-
-	var baseUrl = location.protocol + "//" + location.host;
-	var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
- This regular expression is just a way to recursively match brackets within
- a string.
- 	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-    (  = Start a capturing group
-      (?:  = Start a non-capturing group
-          [^)(]  = Match anything that isn't a parentheses
-          |  = OR
-          \(  = Match a start parentheses
-              (?:  = Start another non-capturing groups
-                  [^)(]+  = Match anything that isn't a parentheses
-                  |  = OR
-                  \(  = Match a start parentheses
-                      [^)(]*  = Match anything that isn't a parentheses
-                  \)  = Match a end parentheses
-              )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-  \)  = Match a close parens
- 	 /gi  = Get all matches, not the first.  Be case insensitive.
-  */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function (fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl.trim().replace(/^"(.*)"$/, function (o, $1) {
-			return $1;
-		}).replace(/^'(.*)'$/, function (o, $1) {
-			return $1;
-		});
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
-			return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-			//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-/***/ }),
-/* 46 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__router__ = __webpack_require__(24);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    href: {
-      type: String,
-      required: true
-    }
-  },
-  methods: {
-
-    go(event) {
-      event.preventDefault();
-      this.$root.currentRoute = this.href;
-      window.history.pushState(null, __WEBPACK_IMPORTED_MODULE_0__router__["a" /* default */][this.href], this.href);
-    }
-  }
-});
-
-/***/ }),
-/* 47 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_VLink_vue__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_VLink_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_VLink_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-__webpack_require__(56);
-
-
-var homeData = {
-    banner: [{
-        href: "www.baidu.com",
-        imgUrl: "//upload-images.jianshu.io/upload_images/2088907-8553e27a39f5a662.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
-    }, {
-        href: "www.baidu.com",
-        imgUrl: "//upload-images.jianshu.io/upload_images/2088907-754fb4eb4afcc4ee.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
-    }, {
-        href: "www.baidu.com",
-        imgUrl: "//upload-images.jianshu.io/upload_images/2088907-597e193193bf2fd5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
-    }],
-    list: ["We are only separated by a turned distance, but could not meet.", "Dear past, thanks for all lessons, dear future, I am ready!", "I love you not for who you are, but for who I am before you.", "We are only separated by a turned distance, but could not meet.", "Dear past, thanks for all lessons, dear future, I am ready!", "I love you not for who you are, but for who I am before you."],
-    allData: [],
-    pageIndex: 0,
-    msg: "展开更多文章⬇"
-
-};
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: "home",
-    data: function () {
-        return homeData;
-    },
-    created: function () {
-
-        this.moreFun();
-    },
-    methods: {
-
-        moreFun() {
-
-            var $this = this.$parent;
-            var _this = this;
-
-            $this.com_Ajax({
-
-                method: 'get',
-                url: './app/data/list.json'
-
-            }, function (data) {
-
-                for (var i = _this.pageIndex * 4; i < _this.pageIndex * 4 + 4; i++) {
-
-                    if (data.data[i]) {
-                        homeData.allData.push(data.data[i]);
-                    } else {
-                        homeData.msg = "没有更多数据了～";
-                    }
-                }
-
-                _this.pageIndex++;
-            }, function (data) {
-
-                console.log(data);
-            });
-        }
-    },
-    components: {
-        VLink: __WEBPACK_IMPORTED_MODULE_0__components_VLink_vue___default.a
-    }
-
-});
-
-/***/ }),
-/* 48 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-var login = {
-    existingUser: [{ user: "wbg@123.com", password: "123" }],
-    user: "wbg@123.com",
-    password: "123",
-    errorMsg: ""
-};
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-
-    name: "login",
-    data: function () {
-        return login;
-    },
-    methods: {
-        loginFun: function () {
-
-            if (login.user && login.password) {
-
-                for (var i = 0; i < login.existingUser.length; i++) {
-
-                    if (login.existingUser[i].user == login.user && login.existingUser[i].password == login.password) {
-
-                        window.localStorage.setItem("user", login.user);
-                        this.$root.currentRoute = "/";
-                        login.errorMsg = "";
-                    } else {
-                        login.errorMsg = "输入账号或密码有误！";
-                    }
-                }
-            } else {
-
-                login.errorMsg = "输入账号或密码为空！";
-            }
-        }
-    }
-});
-
-/***/ }),
-/* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-var game = {
-
-    arr: [{
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }, {
-        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
-    }]
-
-};
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-
-    name: "game",
-    data: function () {
-        return game;
-    },
-    created: function () {
-        this.aa();
-    },
-    methods: {
-        aa() {
-            console.log(this.arr);
-        }
-    }
-});
-
-/***/ }),
-/* 50 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15581,39 +14254,7 @@ if (inBrowser && window.Vue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4)))
 
 /***/ }),
-/* 51 */
-/***/ (function(module, exports) {
-
-/**
- * Translates the list format produced by css-loader into something
- * easier to manipulate.
- */
-module.exports = function listToStyles(parentId, list) {
-  var styles = [];
-  var newStyles = {};
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i];
-    var id = item[0];
-    var css = item[1];
-    var media = item[2];
-    var sourceMap = item[3];
-    var part = {
-      id: parentId + ':' + i,
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    };
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = { id: id, parts: [part] });
-    } else {
-      newStyles[id].parts.push(part);
-    }
-  }
-  return styles;
-};
-
-/***/ }),
-/* 52 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15803,99 +14444,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }, staticRenderFns: [] };
   }]);
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(54)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)(module)))
 
 /***/ }),
-/* 53 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = function () {
-	return this;
-}();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1, eval)("this");
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports) {
-
-module.exports = function (module) {
-	if (!module.webpackPolyfill) {
-		module.deprecate = function () {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function () {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function () {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = "\n<div class=\"top\">\n\n    <div class=\"top-bar\">\n        <router-link to=\"/\">\n            <img src=\"" + __webpack_require__(60) + "\" />\n        </router-link>\n\n        <p>{{page}}</p>\n        <a class=\"right\" v-on:click=\"topFun()\">\n            <img src=\"" + __webpack_require__(61) + "\" />\n        </a>\n    </div>\n    \n    <div class=\"top-cont bg-box\" v-if = \"topShow\">\n\n        <div class=\"login-box\">\n            <p v-if=\"!loginUser\"> \n                <!-- <v-link href=\"/login\" class=\"colorMove\">\n                    Login\n                </v-link> -->\n                <router-link to=\"/login\">Login</router-link>\n\n            </p>\n            <p v-if=\"loginUser\"> \n                <v-link href=\"/personal\" class=\"colorMove\">\n                    个人中心\n                </v-link>\n            </p>\n            <p> \n                <v-link href=\"/game\" class=\"colorMove\">\n                    游戏中心\n                </v-link>\n            </p>\n            <p> \n                <v-link href=\"/messages\" class=\"colorMove\">\n                    消息\n                </v-link>\n            </p>\n            <p> \n                <v-link href=\"/wallet\" class=\"colorMove\">\n                    钱包\n                </v-link>\n            </p>\n\n\n            \n            <p v-if=\"loginUser\"> \n                <a v-on:click=\"loginOut\" class=\"colorMove\">\n                    登出\n                </a> \n            </p>        \n        </div>      \n    </div>\n</div>\n\n";
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(7);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(13)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept(7, function() {
-			var newContent = __webpack_require__(7);
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 57 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -15926,7 +14478,7 @@ if(true) {
 }
 
 /***/ }),
-/* 58 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -15957,31 +14509,13 @@ if(true) {
 }
 
 /***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "bg.jpg";
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACy0lEQVRYR+2XTVLbQBCFu4cqmV2cE2BOANwAThA4AdaGkXZwAswJcFb2sDE3sHMCzAkwJ4CcIM4Ou4ru1FPNuASRJf+EcqWK2dnSqD9Nv9fdYtrw4g3Hp5UBer1efTKZ9Jl5HEVRHMfxeJWXKQTodDoNY8xpeKCI3KdpOgy//fW+qmb7mVmjKDpaBWIewKEx5o6I7omoQUTP1tpDBLu5udlXVVx7jKLoGP9NJpMhM+8w89HZ2dlomZMoBbDWsnOuRUSHAOh0Ok1jzDUR/bDWNp1z50T0xVp75Zy7JaJvRBRbaweLQiwMQER4KIJfWGvbPmB2AqraT5Ik9rCXIhKnaQqgyrUowCUR/RaR8+3t7YEX3wEzZ2lRVejjCTp4eXk5Nsb0VPUWUFUEpQBRFH2dTqfI9y6Cvb6+jo0xmfhU9ThN02cEgCiZeQAxMnMW1EPdVTmkSoSjEGxra6ueF997xcOW0+kUadqDGAEhIrdVDikEcM4ht324AEr3xzoTX9mxem2cQgc+XaUO+QtgjtJn4qvKKa57d1yr6nmSJN/LHPIGIGx8r3SIb1FV54oVLNuucsgMINiqSOnLFpcA4YvWUFUfarXaSZFD8gBKRCciMipS+iJHX3RP3iEicoKiBpuiyGVlPGxyzgHggojg+TosuEptL4LwDvlFRGhYVyho8wDg30dm3gs3rPrm7/fhBcOzca0IAHRtERmiEX0EgIgcGWP2iahlra2/SUFOvVkn/CiAfFv/PwFyk1DWiPwai8hFWa2ABpCCtU/At9ymiDRDdGMMYC7L0vavAbIBZRndfAJ8nsAyJ4BvgidmPijqgvkpeVER+q74ICK7YYwLewsnom63G0arFjNnc19YsB8z7zMzRvJsiQh+t8OQmr9fVRuqitH+MUmSbIrOr7mfZt1uFw/Ehp01G9JPVR3UarVWUXdd+dtwTajZ9o0D/AFylks/Lx8G9gAAAABJRU5ErkJggg=="
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2XwVUCQQyGk2lAO7AEsQKxA61Abpm90QHYAbfd4UQJUAFYgZSgHWAD+X3xLavAvt15MgiHzXUyk28zSf4dpjMbnzk+7QBMp9MegBER9Ynoug4OwArAS5ZlqxTwFUAZ/A3AAsCciN73AzjnDOqRiJ5V9SEFRAVQFIUFJe+9BWi0EMKMiG5F5K7Nt229AgghbFR1mGWZHd5oeZ73nXNLEan253k+cM7dtO21dVX92Mb5DYDYtNYBFEUxYeZeDACAtfd+aL7JAGIC1/l0AMkykKIIj+qCo4vQ5gAzQ0Se2grK5gCAnvc+quqbzjuYhEQ0BzBzzm32N6rq9yRk5kFsy7Z9zI4WlP09JqL7ho2vqjpOMYZ35kAb6anWL0uO7QqYecTMJse19i9yzMwzVT0owk6Ot3fSyXFdBv7apsnEqAMIIYwBNI3wKknMvBCRyf4v2VFybADleyLmNlYiYv4//4QXJccmycx88DA5uRzb68ikttSCq5pcfhLRupPjmCqL9fkC8eSLMM3JSCAAAAAASUVORK5CYII="
-
-/***/ }),
-/* 62 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(47),
+  __webpack_require__(54),
   /* template */
   __webpack_require__(68),
   /* styles */
@@ -16015,7 +14549,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 63 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -16025,7 +14559,7 @@ function injectStyle (ssrContext) {
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(48),
+  __webpack_require__(55),
   /* template */
   __webpack_require__(66),
   /* styles */
@@ -16059,7 +14593,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 64 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -16069,7 +14603,7 @@ function injectStyle (ssrContext) {
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(49),
+  __webpack_require__(56),
   /* template */
   __webpack_require__(67),
   /* styles */
@@ -16101,6 +14635,1481 @@ if (true) {(function () {
 
 module.exports = Component.exports
 
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_swipe__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vue_swipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vue_swipe__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_VLink_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_VLink_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_VLink_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lazyLoad_js__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__touch_js__ = __webpack_require__(23);
+
+//import routes from './router'
+
+
+
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_5__lazyLoad_js__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_6__touch_js__["a" /* default */]);
+
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].prototype.$ajax = __WEBPACK_IMPORTED_MODULE_2_axios___default.a;
+
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component('swipe', __WEBPACK_IMPORTED_MODULE_3_vue_swipe__["Swipe"]);
+__WEBPACK_IMPORTED_MODULE_0_vue__["default"].component('swipe-item', __WEBPACK_IMPORTED_MODULE_3_vue_swipe__["SwipeItem"]);
+
+__webpack_require__(27);
+__webpack_require__(28);
+__webpack_require__(21)(__WEBPACK_IMPORTED_MODULE_0_vue__["default"], __WEBPACK_IMPORTED_MODULE_4__components_VLink_vue___default.a);
+
+const Home = __webpack_require__(29);
+const Login = __webpack_require__(30);
+const Table = __webpack_require__(31);
+
+const routes = [{ path: '/', component: Home }, { path: '/login', component: Login }, { path: '/table', component: Table }];
+
+const router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
+	history: false,
+	hashbang: true,
+	routes
+});
+
+const app = new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
+
+	el: "#app",
+	data: {
+		currentRoute: window.location.pathname,
+		topshow: false,
+		isLogin: false
+	},
+	// computed:{
+	// 	ViewComponent () {
+
+	// 		const matchingView = routes[this.currentRoute]
+	// 		return matchingView
+	// 			? require('./views/' + matchingView + '.vue')
+	// 			: require('./views/404.vue')
+	// 	}
+	// },
+	// render (h) {
+	// 	return h(this.ViewComponent)
+	// },
+	methods: {
+
+		com_Ajax(obj, success, error) {
+			this.$ajax(obj).then(function (data) {
+
+				success(data);
+			}, function (data) {
+
+				error(data);
+			});
+		}
+	},
+	router
+
+});
+
+// window.addEventListener('popstate', () => {
+// 	app.currentRoute = window.location.pathname
+// })
+
+/***/ }),
+/* 33 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+  '/': 'Home',
+  '/login': 'Login',
+  '/detail/:id': 'Detail',
+  '/personal': 'Personal',
+  '/game': 'Game',
+  '/messages': 'Messages',
+  '/wallet': 'Wallet',
+  '/table': 'Table'
+});
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+var bind = __webpack_require__(20);
+var Axios = __webpack_require__(36);
+var defaults = __webpack_require__(6);
+
+/**
+ * Create an instance of Axios
+ *
+ * @param {Object} defaultConfig The default config for the instance
+ * @return {Axios} A new instance of Axios
+ */
+function createInstance(defaultConfig) {
+  var context = new Axios(defaultConfig);
+  var instance = bind(Axios.prototype.request, context);
+
+  // Copy axios.prototype to instance
+  utils.extend(instance, Axios.prototype, context);
+
+  // Copy context to instance
+  utils.extend(instance, context);
+
+  return instance;
+}
+
+// Create the default instance to be exported
+var axios = createInstance(defaults);
+
+// Expose Axios class to allow class inheritance
+axios.Axios = Axios;
+
+// Factory for creating new instances
+axios.create = function create(instanceConfig) {
+  return createInstance(utils.merge(defaults, instanceConfig));
+};
+
+// Expose Cancel & CancelToken
+axios.Cancel = __webpack_require__(17);
+axios.CancelToken = __webpack_require__(35);
+axios.isCancel = __webpack_require__(18);
+
+// Expose all/spread
+axios.all = function all(promises) {
+  return Promise.all(promises);
+};
+axios.spread = __webpack_require__(50);
+
+module.exports = axios;
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = axios;
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var Cancel = __webpack_require__(17);
+
+/**
+ * A `CancelToken` is an object that can be used to request cancellation of an operation.
+ *
+ * @class
+ * @param {Function} executor The executor function.
+ */
+function CancelToken(executor) {
+  if (typeof executor !== 'function') {
+    throw new TypeError('executor must be a function.');
+  }
+
+  var resolvePromise;
+  this.promise = new Promise(function promiseExecutor(resolve) {
+    resolvePromise = resolve;
+  });
+
+  var token = this;
+  executor(function cancel(message) {
+    if (token.reason) {
+      // Cancellation has already been requested
+      return;
+    }
+
+    token.reason = new Cancel(message);
+    resolvePromise(token.reason);
+  });
+}
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+CancelToken.prototype.throwIfRequested = function throwIfRequested() {
+  if (this.reason) {
+    throw this.reason;
+  }
+};
+
+/**
+ * Returns an object that contains a new `CancelToken` and a function that, when called,
+ * cancels the `CancelToken`.
+ */
+CancelToken.source = function source() {
+  var cancel;
+  var token = new CancelToken(function executor(c) {
+    cancel = c;
+  });
+  return {
+    token: token,
+    cancel: cancel
+  };
+};
+
+module.exports = CancelToken;
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var defaults = __webpack_require__(6);
+var utils = __webpack_require__(0);
+var InterceptorManager = __webpack_require__(37);
+var dispatchRequest = __webpack_require__(38);
+var isAbsoluteURL = __webpack_require__(46);
+var combineURLs = __webpack_require__(44);
+
+/**
+ * Create a new instance of Axios
+ *
+ * @param {Object} instanceConfig The default config for the instance
+ */
+function Axios(instanceConfig) {
+  this.defaults = instanceConfig;
+  this.interceptors = {
+    request: new InterceptorManager(),
+    response: new InterceptorManager()
+  };
+}
+
+/**
+ * Dispatch a request
+ *
+ * @param {Object} config The config specific for this request (merged with this.defaults)
+ */
+Axios.prototype.request = function request(config) {
+  /*eslint no-param-reassign:0*/
+  // Allow for axios('example/url'[, config]) a la fetch API
+  if (typeof config === 'string') {
+    config = utils.merge({
+      url: arguments[0]
+    }, arguments[1]);
+  }
+
+  config = utils.merge(defaults, this.defaults, { method: 'get' }, config);
+  config.method = config.method.toLowerCase();
+
+  // Support baseURL config
+  if (config.baseURL && !isAbsoluteURL(config.url)) {
+    config.url = combineURLs(config.baseURL, config.url);
+  }
+
+  // Hook up interceptors middleware
+  var chain = [dispatchRequest, undefined];
+  var promise = Promise.resolve(config);
+
+  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+    chain.unshift(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+    chain.push(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  while (chain.length) {
+    promise = promise.then(chain.shift(), chain.shift());
+  }
+
+  return promise;
+};
+
+// Provide aliases for supported request methods
+utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function (url, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url
+    }));
+  };
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function (url, data, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url,
+      data: data
+    }));
+  };
+});
+
+module.exports = Axios;
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+
+function InterceptorManager() {
+  this.handlers = [];
+}
+
+/**
+ * Add a new interceptor to the stack
+ *
+ * @param {Function} fulfilled The function to handle `then` for a `Promise`
+ * @param {Function} rejected The function to handle `reject` for a `Promise`
+ *
+ * @return {Number} An ID used to remove interceptor later
+ */
+InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+  this.handlers.push({
+    fulfilled: fulfilled,
+    rejected: rejected
+  });
+  return this.handlers.length - 1;
+};
+
+/**
+ * Remove an interceptor from the stack
+ *
+ * @param {Number} id The ID that was returned by `use`
+ */
+InterceptorManager.prototype.eject = function eject(id) {
+  if (this.handlers[id]) {
+    this.handlers[id] = null;
+  }
+};
+
+/**
+ * Iterate over all the registered interceptors
+ *
+ * This method is particularly useful for skipping over any
+ * interceptors that may have become `null` calling `eject`.
+ *
+ * @param {Function} fn The function to call for each interceptor
+ */
+InterceptorManager.prototype.forEach = function forEach(fn) {
+  utils.forEach(this.handlers, function forEachHandler(h) {
+    if (h !== null) {
+      fn(h);
+    }
+  });
+};
+
+module.exports = InterceptorManager;
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+var transformData = __webpack_require__(41);
+var isCancel = __webpack_require__(18);
+var defaults = __webpack_require__(6);
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+function throwIfCancellationRequested(config) {
+  if (config.cancelToken) {
+    config.cancelToken.throwIfRequested();
+  }
+}
+
+/**
+ * Dispatch a request to the server using the configured adapter.
+ *
+ * @param {object} config The config that is to be used for the request
+ * @returns {Promise} The Promise to be fulfilled
+ */
+module.exports = function dispatchRequest(config) {
+  throwIfCancellationRequested(config);
+
+  // Ensure headers exist
+  config.headers = config.headers || {};
+
+  // Transform request data
+  config.data = transformData(config.data, config.headers, config.transformRequest);
+
+  // Flatten headers
+  config.headers = utils.merge(config.headers.common || {}, config.headers[config.method] || {}, config.headers || {});
+
+  utils.forEach(['delete', 'get', 'head', 'post', 'put', 'patch', 'common'], function cleanHeaderConfig(method) {
+    delete config.headers[method];
+  });
+
+  var adapter = config.adapter || defaults.adapter;
+
+  return adapter(config).then(function onAdapterResolution(response) {
+    throwIfCancellationRequested(config);
+
+    // Transform response data
+    response.data = transformData(response.data, response.headers, config.transformResponse);
+
+    return response;
+  }, function onAdapterRejection(reason) {
+    if (!isCancel(reason)) {
+      throwIfCancellationRequested(config);
+
+      // Transform response data
+      if (reason && reason.response) {
+        reason.response.data = transformData(reason.response.data, reason.response.headers, config.transformResponse);
+      }
+    }
+
+    return Promise.reject(reason);
+  });
+};
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Update an Error with the specified config, error code, and response.
+ *
+ * @param {Error} error The error to update.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The error.
+ */
+
+module.exports = function enhanceError(error, config, code, request, response) {
+  error.config = config;
+  if (code) {
+    error.code = code;
+  }
+  error.request = request;
+  error.response = response;
+  return error;
+};
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var createError = __webpack_require__(19);
+
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ */
+module.exports = function settle(resolve, reject, response) {
+  var validateStatus = response.config.validateStatus;
+  // Note: status is not exposed by XDomainRequest
+  if (!response.status || !validateStatus || validateStatus(response.status)) {
+    resolve(response);
+  } else {
+    reject(createError('Request failed with status code ' + response.status, response.config, null, response.request, response));
+  }
+};
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Object|String} data The data to be transformed
+ * @param {Array} headers The headers for the request or response
+ * @param {Array|Function} fns A single function or Array of functions
+ * @returns {*} The resulting transformed data
+ */
+module.exports = function transformData(data, headers, fns) {
+  /*eslint no-param-reassign:0*/
+  utils.forEach(fns, function transform(fn) {
+    data = fn(data, headers);
+  });
+
+  return data;
+};
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
+
+var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+function E() {
+  this.message = 'String contains an invalid character';
+}
+E.prototype = new Error();
+E.prototype.code = 5;
+E.prototype.name = 'InvalidCharacterError';
+
+function btoa(input) {
+  var str = String(input);
+  var output = '';
+  for (
+  // initialize result and counter
+  var block, charCode, idx = 0, map = chars;
+  // if the next str index does not exist:
+  //   change the mapping table to "="
+  //   check if d has no fractional digits
+  str.charAt(idx | 0) || (map = '=', idx % 1);
+  // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+  output += map.charAt(63 & block >> 8 - idx % 1 * 8)) {
+    charCode = str.charCodeAt(idx += 3 / 4);
+    if (charCode > 0xFF) {
+      throw new E();
+    }
+    block = block << 8 | charCode;
+  }
+  return output;
+}
+
+module.exports = btoa;
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+
+function encode(val) {
+  return encodeURIComponent(val).replace(/%40/gi, '@').replace(/%3A/gi, ':').replace(/%24/g, '$').replace(/%2C/gi, ',').replace(/%20/g, '+').replace(/%5B/gi, '[').replace(/%5D/gi, ']');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */
+module.exports = function buildURL(url, params, paramsSerializer) {
+  /*eslint no-param-reassign:0*/
+  if (!params) {
+    return url;
+  }
+
+  var serializedParams;
+  if (paramsSerializer) {
+    serializedParams = paramsSerializer(params);
+  } else if (utils.isURLSearchParams(params)) {
+    serializedParams = params.toString();
+  } else {
+    var parts = [];
+
+    utils.forEach(params, function serialize(val, key) {
+      if (val === null || typeof val === 'undefined') {
+        return;
+      }
+
+      if (utils.isArray(val)) {
+        key = key + '[]';
+      }
+
+      if (!utils.isArray(val)) {
+        val = [val];
+      }
+
+      utils.forEach(val, function parseValue(v) {
+        if (utils.isDate(v)) {
+          v = v.toISOString();
+        } else if (utils.isObject(v)) {
+          v = JSON.stringify(v);
+        }
+        parts.push(encode(key) + '=' + encode(v));
+      });
+    });
+
+    serializedParams = parts.join('&');
+  }
+
+  if (serializedParams) {
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+};
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ * @returns {string} The combined URL
+ */
+
+module.exports = function combineURLs(baseURL, relativeURL) {
+  return relativeURL ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '') : baseURL;
+};
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+
+module.exports = utils.isStandardBrowserEnv() ?
+
+// Standard browser envs support document.cookie
+function standardBrowserEnv() {
+  return {
+    write: function write(name, value, expires, path, domain, secure) {
+      var cookie = [];
+      cookie.push(name + '=' + encodeURIComponent(value));
+
+      if (utils.isNumber(expires)) {
+        cookie.push('expires=' + new Date(expires).toGMTString());
+      }
+
+      if (utils.isString(path)) {
+        cookie.push('path=' + path);
+      }
+
+      if (utils.isString(domain)) {
+        cookie.push('domain=' + domain);
+      }
+
+      if (secure === true) {
+        cookie.push('secure');
+      }
+
+      document.cookie = cookie.join('; ');
+    },
+
+    read: function read(name) {
+      var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+      return match ? decodeURIComponent(match[3]) : null;
+    },
+
+    remove: function remove(name) {
+      this.write(name, '', Date.now() - 86400000);
+    }
+  };
+}() :
+
+// Non standard browser env (web workers, react-native) lack needed support.
+function nonStandardBrowserEnv() {
+  return {
+    write: function write() {},
+    read: function read() {
+      return null;
+    },
+    remove: function remove() {}
+  };
+}();
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */
+
+module.exports = function isAbsoluteURL(url) {
+  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+  // by any combination of letters, digits, plus, period, or hyphen.
+  return (/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url)
+  );
+};
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+
+module.exports = utils.isStandardBrowserEnv() ?
+
+// Standard browser envs have full support of the APIs needed to test
+// whether the request URL is of the same origin as current location.
+function standardBrowserEnv() {
+  var msie = /(msie|trident)/i.test(navigator.userAgent);
+  var urlParsingNode = document.createElement('a');
+  var originURL;
+
+  /**
+  * Parse a URL to discover it's components
+  *
+  * @param {String} url The URL to be parsed
+  * @returns {Object}
+  */
+  function resolveURL(url) {
+    var href = url;
+
+    if (msie) {
+      // IE needs attribute set twice to normalize properties
+      urlParsingNode.setAttribute('href', href);
+      href = urlParsingNode.href;
+    }
+
+    urlParsingNode.setAttribute('href', href);
+
+    // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+    return {
+      href: urlParsingNode.href,
+      protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+      host: urlParsingNode.host,
+      search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+      hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+      hostname: urlParsingNode.hostname,
+      port: urlParsingNode.port,
+      pathname: urlParsingNode.pathname.charAt(0) === '/' ? urlParsingNode.pathname : '/' + urlParsingNode.pathname
+    };
+  }
+
+  originURL = resolveURL(window.location.href);
+
+  /**
+  * Determine if a URL shares the same origin as the current location
+  *
+  * @param {String} requestURL The URL to test
+  * @returns {boolean} True if URL shares the same origin, otherwise false
+  */
+  return function isURLSameOrigin(requestURL) {
+    var parsed = utils.isString(requestURL) ? resolveURL(requestURL) : requestURL;
+    return parsed.protocol === originURL.protocol && parsed.host === originURL.host;
+  };
+}() :
+
+// Non standard browser envs (web workers, react-native) lack needed support.
+function nonStandardBrowserEnv() {
+  return function isURLSameOrigin() {
+    return true;
+  };
+}();
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+
+module.exports = function normalizeHeaderName(headers, normalizedName) {
+  utils.forEach(headers, function processHeader(value, name) {
+    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+      headers[normalizedName] = value;
+      delete headers[name];
+    }
+  });
+};
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var utils = __webpack_require__(0);
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */
+module.exports = function parseHeaders(headers) {
+  var parsed = {};
+  var key;
+  var val;
+  var i;
+
+  if (!headers) {
+    return parsed;
+  }
+
+  utils.forEach(headers.split('\n'), function parser(line) {
+    i = line.indexOf(':');
+    key = utils.trim(line.substr(0, i)).toLowerCase();
+    val = utils.trim(line.substr(i + 1));
+
+    if (key) {
+      parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+    }
+  });
+
+  return parsed;
+};
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  var args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ * @returns {Function}
+ */
+
+module.exports = function spread(callback) {
+  return function wrap(arr) {
+    return callback.apply(null, arr);
+  };
+};
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports) {
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer);
+};
+
+function isBuffer(obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj);
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer(obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0));
+}
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+	// get current location
+	var location = typeof window !== "undefined" && window.location;
+
+	if (!location) {
+		throw new Error("fixUrls requires window.location");
+	}
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+		return css;
+	}
+
+	var baseUrl = location.protocol + "//" + location.host;
+	var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+ This regular expression is just a way to recursively match brackets within
+ a string.
+ 	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+    (  = Start a capturing group
+      (?:  = Start a non-capturing group
+          [^)(]  = Match anything that isn't a parentheses
+          |  = OR
+          \(  = Match a start parentheses
+              (?:  = Start another non-capturing groups
+                  [^)(]+  = Match anything that isn't a parentheses
+                  |  = OR
+                  \(  = Match a start parentheses
+                      [^)(]*  = Match anything that isn't a parentheses
+                  \)  = Match a end parentheses
+              )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+  \)  = Match a close parens
+ 	 /gi  = Get all matches, not the first.  Be case insensitive.
+  */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function (fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl.trim().replace(/^"(.*)"$/, function (o, $1) {
+			return $1;
+		}).replace(/^'(.*)'$/, function (o, $1) {
+			return $1;
+		});
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+			return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+			//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+/***/ }),
+/* 53 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__router__ = __webpack_require__(33);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    href: {
+      type: String,
+      required: true
+    }
+  },
+  methods: {
+
+    go(event) {
+      event.preventDefault();
+      this.$root.currentRoute = this.href;
+      window.history.pushState(null, __WEBPACK_IMPORTED_MODULE_0__router__["a" /* default */][this.href], this.href);
+    }
+  }
+});
+
+/***/ }),
+/* 54 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_VLink_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_VLink_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_VLink_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+__webpack_require__(61);
+
+
+var homeData = {
+    banner: [{
+        href: "www.baidu.com",
+        imgUrl: "//upload-images.jianshu.io/upload_images/2088907-8553e27a39f5a662.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+    }, {
+        href: "www.baidu.com",
+        imgUrl: "//upload-images.jianshu.io/upload_images/2088907-754fb4eb4afcc4ee.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+    }, {
+        href: "www.baidu.com",
+        imgUrl: "//upload-images.jianshu.io/upload_images/2088907-597e193193bf2fd5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+    }],
+    list: ["We are only separated by a turned distance, but could not meet.", "Dear past, thanks for all lessons, dear future, I am ready!", "I love you not for who you are, but for who I am before you.", "We are only separated by a turned distance, but could not meet.", "Dear past, thanks for all lessons, dear future, I am ready!", "I love you not for who you are, but for who I am before you."],
+    allData: [],
+    pageIndex: 0,
+    msg: "展开更多文章⬇"
+
+};
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "home",
+    data: function () {
+        return homeData;
+    },
+    created: function () {
+
+        this.moreFun();
+    },
+    methods: {
+
+        moreFun() {
+
+            var $this = this.$parent;
+            var _this = this;
+
+            $this.com_Ajax({
+
+                method: 'get',
+                url: './app/data/list.json'
+
+            }, function (data) {
+
+                for (var i = _this.pageIndex * 4; i < _this.pageIndex * 4 + 4; i++) {
+
+                    if (data.data[i]) {
+                        homeData.allData.push(data.data[i]);
+                    } else {
+                        homeData.msg = "没有更多数据了～";
+                    }
+                }
+
+                _this.pageIndex++;
+            }, function (data) {
+
+                console.log(data);
+            });
+        }
+    },
+    components: {
+        VLink: __WEBPACK_IMPORTED_MODULE_0__components_VLink_vue___default.a
+    }
+
+});
+
+/***/ }),
+/* 55 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+var login = {
+    existingUser: [{ user: "wbg@123.com", password: "123" }],
+    user: "wbg@123.com",
+    password: "123",
+    errorMsg: ""
+};
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+    name: "login",
+    data: function () {
+        return login;
+    },
+    methods: {
+        loginFun: function () {
+
+            if (login.user && login.password) {
+
+                for (var i = 0; i < login.existingUser.length; i++) {
+
+                    if (login.existingUser[i].user == login.user && login.existingUser[i].password == login.password) {
+
+                        window.localStorage.setItem("user", login.user);
+                        this.$root.currentRoute = "/";
+                        login.errorMsg = "";
+                    } else {
+                        login.errorMsg = "输入账号或密码有误！";
+                    }
+                }
+            } else {
+
+                login.errorMsg = "输入账号或密码为空！";
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+var game = {
+
+    arr: [{
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }, {
+        isshow: [{ "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }, { "show": 1, "isclick": 0 }]
+    }]
+
+};
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+    name: "game",
+    data: function () {
+        return game;
+    },
+    created: function () {
+        this.aa();
+    },
+    methods: {
+        aa() {
+            console.log(this.arr);
+            var arr = [1, 0, 1, 0, 1, 0];
+
+            for (var i = 0; i < arr.length; i++) {
+                if (!i) {
+                    console.log(123);
+                    return false;
+                }
+            }
+            console.log("ok");
+        }
+    }
+});
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports) {
+
+/**
+ * Translates the list format produced by css-loader into something
+ * easier to manipulate.
+ */
+module.exports = function listToStyles(parentId, list) {
+  var styles = [];
+  var newStyles = {};
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = item[0];
+    var css = item[1];
+    var media = item[2];
+    var sourceMap = item[3];
+    var part = {
+      id: parentId + ':' + i,
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    };
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = { id: id, parts: [part] });
+    } else {
+      newStyles[id].parts.push(part);
+    }
+  }
+  return styles;
+};
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = function () {
+	return this;
+}();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1, eval)("this");
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports) {
+
+module.exports = function (module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function () {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function () {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function () {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "\n<div class=\"top\">\n\n    <div class=\"top-bar\">\n        <router-link to=\"/\">\n            <img src=\"" + __webpack_require__(63) + "\" />\n        </router-link>\n\n        <p>{{page}}</p>\n        <a class=\"right\" v-on:click=\"topFun()\">\n            <img src=\"" + __webpack_require__(64) + "\" />\n        </a>\n    </div>\n    \n    <div class=\"top-cont bg-box\" v-if = \"topShow\">\n\n        <div class=\"login-box\">\n            <p v-if=\"!loginUser\"> \n                <!-- <v-link href=\"/login\" class=\"colorMove\">\n                    Login\n                </v-link> -->\n                <router-link to=\"/login\">Login</router-link>\n\n            </p>\n            <p v-if=\"loginUser\"> \n                <v-link href=\"/personal\" class=\"colorMove\">\n                    个人中心\n                </v-link>\n            </p>\n            <p> \n                <v-link href=\"/game\" class=\"colorMove\">\n                    游戏中心\n                </v-link>\n            </p>\n            <p> \n                <v-link href=\"/messages\" class=\"colorMove\">\n                    消息\n                </v-link>\n            </p>\n            <p> \n                <v-link href=\"/wallet\" class=\"colorMove\">\n                    钱包\n                </v-link>\n            </p>\n\n\n            \n            <p v-if=\"loginUser\"> \n                <a v-on:click=\"loginOut\" class=\"colorMove\">\n                    登出\n                </a> \n            </p>        \n        </div>      \n    </div>\n</div>\n\n";
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(7);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(13)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept(7, function() {
+			var newContent = __webpack_require__(7);
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "bg.jpg";
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACy0lEQVRYR+2XTVLbQBCFu4cqmV2cE2BOANwAThA4AdaGkXZwAswJcFb2sDE3sHMCzAkwJ4CcIM4Ou4ru1FPNuASRJf+EcqWK2dnSqD9Nv9fdYtrw4g3Hp5UBer1efTKZ9Jl5HEVRHMfxeJWXKQTodDoNY8xpeKCI3KdpOgy//fW+qmb7mVmjKDpaBWIewKEx5o6I7omoQUTP1tpDBLu5udlXVVx7jKLoGP9NJpMhM+8w89HZ2dlomZMoBbDWsnOuRUSHAOh0Ok1jzDUR/bDWNp1z50T0xVp75Zy7JaJvRBRbaweLQiwMQER4KIJfWGvbPmB2AqraT5Ik9rCXIhKnaQqgyrUowCUR/RaR8+3t7YEX3wEzZ2lRVejjCTp4eXk5Nsb0VPUWUFUEpQBRFH2dTqfI9y6Cvb6+jo0xmfhU9ThN02cEgCiZeQAxMnMW1EPdVTmkSoSjEGxra6ueF997xcOW0+kUadqDGAEhIrdVDikEcM4ht324AEr3xzoTX9mxem2cQgc+XaUO+QtgjtJn4qvKKa57d1yr6nmSJN/LHPIGIGx8r3SIb1FV54oVLNuucsgMINiqSOnLFpcA4YvWUFUfarXaSZFD8gBKRCciMipS+iJHX3RP3iEicoKiBpuiyGVlPGxyzgHggojg+TosuEptL4LwDvlFRGhYVyho8wDg30dm3gs3rPrm7/fhBcOzca0IAHRtERmiEX0EgIgcGWP2iahlra2/SUFOvVkn/CiAfFv/PwFyk1DWiPwai8hFWa2ABpCCtU/At9ymiDRDdGMMYC7L0vavAbIBZRndfAJ8nsAyJ4BvgidmPijqgvkpeVER+q74ICK7YYwLewsnom63G0arFjNnc19YsB8z7zMzRvJsiQh+t8OQmr9fVRuqitH+MUmSbIrOr7mfZt1uFw/Ehp01G9JPVR3UarVWUXdd+dtwTajZ9o0D/AFylks/Lx8G9gAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2XwVUCQQyGk2lAO7AEsQKxA61Abpm90QHYAbfd4UQJUAFYgZSgHWAD+X3xLavAvt15MgiHzXUyk28zSf4dpjMbnzk+7QBMp9MegBER9Ynoug4OwArAS5ZlqxTwFUAZ/A3AAsCciN73AzjnDOqRiJ5V9SEFRAVQFIUFJe+9BWi0EMKMiG5F5K7Nt229AgghbFR1mGWZHd5oeZ73nXNLEan253k+cM7dtO21dVX92Mb5DYDYtNYBFEUxYeZeDACAtfd+aL7JAGIC1/l0AMkykKIIj+qCo4vQ5gAzQ0Se2grK5gCAnvc+quqbzjuYhEQ0BzBzzm32N6rq9yRk5kFsy7Z9zI4WlP09JqL7ho2vqjpOMYZ35kAb6anWL0uO7QqYecTMJse19i9yzMwzVT0owk6Ot3fSyXFdBv7apsnEqAMIIYwBNI3wKknMvBCRyf4v2VFybADleyLmNlYiYv4//4QXJccmycx88DA5uRzb68ikttSCq5pcfhLRupPjmCqL9fkC8eSLMM3JSCAAAAAASUVORK5CYII="
 
 /***/ }),
 /* 65 */
@@ -16393,13 +16402,6 @@ if(true) {
  // When the module is disposed, remove the <style> tags
  module.hot.dispose(function() { update(); });
 }
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(21);
-
 
 /***/ })
 /******/ ]);

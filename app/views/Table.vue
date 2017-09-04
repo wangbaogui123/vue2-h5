@@ -78,6 +78,15 @@
         methods:{
             aa(){
                 console.log(this.arr)
+                var arr = [1,0,1,0,1,0]
+
+                for(var i = 0;i < arr.length; i ++){
+                    if(!i){
+                        console.log(123);
+                        return false;
+                    }
+                }
+                console.log("ok");
            }
         }
     }

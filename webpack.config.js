@@ -2,10 +2,10 @@ const webpack = require('webpack'); //to access built-in plugins
 const path = require('path');
 
 const config = {
-  entry:{
-      app:[path.join(__dirname,'./app/app.js')]
-  },
-  //entry: './app/app.js',
+  // entry:{
+  //     app:[path.join(__dirname,'./app/app.js')]
+  // },
+  entry: './app/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
