@@ -17,6 +17,7 @@
 	width: 1.6rem;
 	height: 1.6rem;
 	margin: 0.7rem 1rem;
+	float:left;
 }
 .top .top-bar a img{
 	display: block;

@@ -5,5 +5,6 @@ export default {
   '/personal':'Personal',
   '/game':'Game',
   '/messages':'Messages',
-  '/wallet':'Wallet'
+  '/wallet':'Wallet',
+  '/table':'Table'
 }

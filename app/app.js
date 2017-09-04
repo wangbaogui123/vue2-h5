@@ -5,9 +5,11 @@ import axios from 'axios'
 import { Swipe, SwipeItem } from 'vue-swipe'
 import VLink from './components/VLink.vue'
 import LazyLoad from './lazyLoad.js'
+import TouchM from './touch.js'
 
 Vue.use(LazyLoad);
 Vue.use(VueRouter)
+Vue.use(TouchM)
 
 Vue.prototype.$ajax = axios
 
@@ -21,10 +23,12 @@ require('./component.js')(Vue,VLink)
 
 const Home = require ("./views/Home.vue")
 const Login = require ("./views/Login.vue")
+const Table = require ("./views/Table.vue")
 
 const routes = [
 	{ path: '/', component: Home},
 	{ path: '/login', component: Login},
+	{ path: '/table', component: Table}
 ]
 
 const router = new VueRouter({

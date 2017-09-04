@@ -3,9 +3,7 @@ const path = require('path');
 
 const config = {
   entry:{
-      app:[path.join(__dirname,'./app/app.js'),
-            'webpack-dev-server/client?http://localhost:8080/'
-          ]
+      app:[path.join(__dirname,'./app/app.js')]
   },
   //entry: './app/app.js',
   output: {
